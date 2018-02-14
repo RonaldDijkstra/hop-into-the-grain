@@ -1,0 +1,6 @@
+@mixin my-outer-container() {
+  @include grid-container;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+}

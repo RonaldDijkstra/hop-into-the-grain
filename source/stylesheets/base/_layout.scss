@@ -15,11 +15,11 @@ body {
 }
 
 body {
+  background: $light-blue;
   margin: 0;
 }
 
 .main {
-  background: gray;
-  margin: 0 auto;
-  width: 100%;
+  @include my-outer-container;
+  background: transparent;
 }
