@@ -18,12 +18,11 @@
     color: $white;
     font-size: $base-font-size * 4;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .counter-wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flex-justify;
   }
 
   .counter-block {
@@ -32,8 +31,8 @@
     color: $white;
     margin-left: 1em;
     margin-right: 1em;
-    min-width: 240px;
-    padding: 3em;
+    min-width: 200px;
+    padding: 2em;
     text-align: center;
     text-transform: uppercase;
 
@@ -45,5 +44,32 @@
       font-size: $base-font-size * 3;
       font-weight: 900;
     }
+  }
+}
+
+.featured-line-up {
+  .line-up-wrapper {
+    @include flex-justify;
+  }
+
+  .line-up-block {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 200px;
+  }
+
+  h2 {
+    color: $deep-purple;
+    font-size: $base-font-size * 3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $dark-gray;
+    font-size: $base-font-size * 1.2;
+    font-weight: 500;
+    margin-bottom: 2em;
+    text-align: center;
   }
 }
