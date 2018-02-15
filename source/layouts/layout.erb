@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body class="<%= page_classes %>">
     <div class="main" role="main">
       <%= partial "header" %>
       <%= yield %>
