@@ -1,0 +1,10 @@
+.hero {
+  @include outer-container();
+  padding: 0;
+
+  .hero-inner {
+    $hero-image: "../images/hero-home.png";
+    background-image: url($hero-image);
+    height: 970px;
+  }
+}
