@@ -1,6 +1,25 @@
-@mixin my-outer-container() {
-  @include grid-container;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $max-width;
+@mixin button($color) {
+  background-color: $color;
+  border: 2px solid $color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color, 10%);
+    border-color: darken($color, 10%);
+    color: $white;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border-color: $color;
+    color: $color;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($white, 0.1);
+      border-color: darken($color, 10%);
+      color: darken($color, 15%);
+    }
+  }
 }

@@ -1,29 +1,30 @@
-<section class="header row">
+<header class="header" data-header="fixed">
+  <div class="row">
+    <div class="header-wrapper">
 
-  <div class="logo">
-    <h1>Hop into the Grain!</h1>
+      <div class="logo">
+        <% link_to("/") do %>
+          <%= image_tag "logo-hop-into-the-grain.png", title: "Hop! into the Grain", alt: "Hop! into the Grain" %>
+        <% end %>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a class="nav-item" href="#">Line-up</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Event Info</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Contact</a>
+          </li>
+          <li>
+            <a class="button orange" href="#">Tickets &raquo;</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   </div>
-
-  <h2>Craft Beer & Music Festival</h2>
-
-  <div class="main-nav">
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Tickets</a>
-      </li>
-      <li>
-        <a href="#">Beer</a>
-      </li>
-      <li>
-        <a href="#">Music</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-
-</section>
+</header>

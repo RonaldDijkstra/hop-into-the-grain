@@ -27,7 +27,7 @@ a {
   transition: color $base-duration $base-timing;
 
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($action-color, 50%);
   }
 
   &:focus {

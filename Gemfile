@@ -8,7 +8,7 @@ gem 'middleman-livereload'
 # Bitters, Need, Bourbon
 gem 'bitters'
 gem 'bourbon'
-gem 'neat'
+gem 'neat', '~> 1.7.2'
 
 # Others
 gem 'rake'

@@ -11,7 +11,7 @@ $_button-background-color-hover: shade($action-color, 20%);
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: 16px;
+  font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
@@ -40,5 +40,22 @@ $_button-background-color-hover: shade($action-color, 20%);
     &:hover {
       background-color: $_button-background-color;
     }
+  }
+
+  &.small {
+    font-size: $base-font-size * 1.1;
+    padding: $base-spacing / 4 $base-spacing / 2;
+  }
+
+  &.big {
+    font-size: 1.3em;
+  }
+
+  &.blue {
+    @include button($blue);
+  }
+
+  &.orange {
+    @include button($orange);
   }
 }

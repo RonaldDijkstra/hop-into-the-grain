@@ -15,11 +15,20 @@ body {
 }
 
 body {
-  background: $light-blue;
+  background: $light-gray;
   margin: 0;
 }
 
-.main {
-  @include my-outer-container;
-  background: transparent;
+section {
+  padding: 3em 0;
+
+  @include media($medium-up) {
+    padding: 4em 0;
+  }
+}
+
+.row {
+  @include outer-container;
+  padding: 0 1em;
+  position: relative;
 }
