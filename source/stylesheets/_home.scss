@@ -8,3 +8,42 @@
     height: 970px;
   }
 }
+
+.counter {
+  background: $orange;
+  padding-bottom: 4em;
+  padding-top: 4em;
+
+  h2 {
+    color: $white;
+    font-size: $base-font-size * 4;
+    text-align: center;
+  }
+
+  .counter-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .counter-block {
+    background: rgba($black, 0.8);
+    border-radius: $base-border-radius;
+    color: $white;
+    margin-left: 1em;
+    margin-right: 1em;
+    min-width: 240px;
+    padding: 3em;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+
+    .day {
+      font-size: $base-font-size * 3;
+      font-weight: 900;
+    }
+  }
+}
