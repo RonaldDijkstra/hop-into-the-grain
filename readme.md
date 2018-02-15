@@ -1,1 +1,1 @@
-Repo for a beer & music festival
+Repo for a beer & music festival website
