@@ -39,6 +39,15 @@ activate :directory_indexes
 #   end
 # end
 
+# Helpers
+
+helpers do
+  # Use frontmatter for meta description
+  def meta_description(page = current_page)
+    return page.data.description if page.data.description
+  end
+end
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
