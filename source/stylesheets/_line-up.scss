@@ -8,7 +8,7 @@ body.line-up {
 
   .line-up-nav {
     background: $light-gray;
-    padding: 0;
+    padding: 1em 0;
 
     ul {
       text-align: center;
@@ -20,8 +20,15 @@ body.line-up {
       a {
         display: block;
         font-size: $base-font-size * 1.4;
-        padding: 0.5em 0.2em;
+        padding: 0.5em;
         text-decoration: none;
+
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+          background: $medium-gray;
+        }
       }
     }
   }
