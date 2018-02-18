@@ -1,0 +1,12 @@
+body.contact {
+  .hero {
+    background-attachment: scroll;
+    background-color: $blue;
+    background-image: url("../images/hero-sub.png");
+    background-position: center;
+  }
+
+  article {
+    max-width: 640px;
+  }
+}
