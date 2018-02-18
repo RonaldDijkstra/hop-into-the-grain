@@ -1,75 +1,76 @@
-.hero {
-  @include outer-container();
-  padding: 0;
+body.index {
+  .hero {
+    padding: 0;
 
-  .hero-inner {
-    $hero-image: "../images/hero-home.png";
-    background-image: url($hero-image);
-    height: 970px;
-  }
-}
-
-.counter {
-  background: $orange;
-  padding-bottom: 4em;
-  padding-top: 4em;
-
-  h2 {
-    color: $white;
-    font-size: $base-font-size * 4;
-    text-align: center;
-    text-transform: uppercase;
+    .hero-inner {
+      $hero-image: "../images/hero-home.png";
+      background-image: url($hero-image);
+      height: 970px;
+    }
   }
 
-  .counter-wrapper {
-    @include flex-justify;
-  }
+  .counter {
+    background: $orange;
+    padding-bottom: 4em;
+    padding-top: 4em;
 
-  .counter-block {
-    background: rgba($black, 0.8);
-    border-radius: $base-border-radius;
-    color: $white;
-    margin-left: 1em;
-    margin-right: 1em;
-    min-width: 200px;
-    padding: 2em;
-    text-align: center;
-    text-transform: uppercase;
-
-    span {
-      display: block;
+    h2 {
+      color: $white;
+      font-size: $base-font-size * 4;
+      text-align: center;
+      text-transform: uppercase;
     }
 
-    .day {
+    .counter-wrapper {
+      @include flex-justify;
+    }
+
+    .counter-block {
+      background: rgba($black, 0.8);
+      border-radius: $base-border-radius;
+      color: $white;
+      margin-left: 1em;
+      margin-right: 1em;
+      min-width: 200px;
+      padding: 2em;
+      text-align: center;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+      }
+
+      .day {
+        font-size: $base-font-size * 3;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .featured-line-up {
+    .line-up-wrapper {
+      @include flex-justify;
+    }
+
+    .line-up-block {
+      margin-left: 1em;
+      margin-right: 1em;
+      width: 200px;
+    }
+
+    h2 {
+      color: $deep-purple;
       font-size: $base-font-size * 3;
-      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
     }
-  }
-}
 
-.featured-line-up {
-  .line-up-wrapper {
-    @include flex-justify;
-  }
-
-  .line-up-block {
-    margin-left: 1em;
-    margin-right: 1em;
-    width: 200px;
-  }
-
-  h2 {
-    color: $deep-purple;
-    font-size: $base-font-size * 3;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    color: $dark-gray;
-    font-size: $base-font-size * 1.2;
-    font-weight: 500;
-    margin-bottom: 2em;
-    text-align: center;
+    h3 {
+      color: $dark-gray;
+      font-size: $base-font-size * 1.2;
+      font-weight: 500;
+      margin-bottom: 2em;
+      text-align: center;
+    }
   }
 }

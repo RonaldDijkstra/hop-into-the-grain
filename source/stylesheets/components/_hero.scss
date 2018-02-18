@@ -1,3 +1,10 @@
-.hero-inner {
-  // @include outer-container();
+.hero {
+  padding: 3em 0;
+
+  h1 {
+    color: $white;
+    font-size: $base-font-size * 4;
+    margin: 0;
+    text-align: center;
+  }
 }

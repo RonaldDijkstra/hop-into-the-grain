@@ -1,0 +1,42 @@
+body.line-up {
+  .hero {
+    background-attachment: scroll;
+    background-color: $blue;
+    background-image: url("../images/hero-sub.png");
+    background-position: center;
+  }
+
+  .line-up-nav {
+    background: $light-gray;
+    padding: 0;
+
+    ul {
+      text-align: center;
+    }
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        font-size: $base-font-size * 1.4;
+        padding: 0.5em 0.2em;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .line-up-wrapper {
+    @include flex-justify;
+    flex-wrap: wrap;
+
+    .line-up-block {
+      color: $base-font-color;
+      display: inline-block;
+      flex-grow: 1;
+      margin-bottom: 1em;
+      text-align: center;
+      width: calc(100% * (1/4) - 10px - 1px);
+    }
+  }
+}
