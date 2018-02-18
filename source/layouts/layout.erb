@@ -5,8 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title>
+      <% if current_page == "index.html" %>
+        Hop into the Grain! - Craft Beer & Music Festival - MAY 26th, 2018 - Groningen
+      <% else %>
+        <%= current_page.data.title %> | Hop! into the Grain!
+      <% end %>
+    </title>
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag "site" %>
   </head>
