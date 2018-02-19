@@ -15,6 +15,8 @@ page '/*.txt', layout: false
 
 activate :directory_indexes
 
+set :relative_links, true
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -55,7 +57,17 @@ configure :development do
   activate :livereload
 end
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.remote = "git@github.com:RonaldDijkstra/hop-into-the-grain.git"
+end
+
+after_build do
+  # rename CNAME for gh-pages after build
+  File.rename "build/CNAME.html", "build/CNAME"
+end
