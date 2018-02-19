@@ -16,8 +16,61 @@
     }
   }
 
+  .nav-trigger {
+    background-color: $orange;
+    color: transparent;
+    height: 90px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: 100%;
+    top: 0;
+    white-space: nowrap;
+    width: 90px;
+
+    @include media($menu-desktop) {
+      display: none;
+    }
+
+    span {
+      background-color: $white;
+      bottom: auto;
+      height: 3px;
+      left: 50%;
+      position: absolute;
+      right: auto;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition: background-color 0.3s ease;
+      width: 26px;
+
+      &::before,
+      &::after {
+        background-color: $white;
+        content: "";
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: 0.3s;
+        width: 26px;
+      }
+
+      &::before {
+        transform: translateY(-9px);
+      }
+
+      &::after {
+        transform: translateY(9px);
+      }
+    }
+  }
+
   .main-nav {
-    display: inline-block;
+    display: none;
+
+    @include media($menu-desktop) {
+      display: inline-block;
+    }
 
     ul {
       align-items: center;
