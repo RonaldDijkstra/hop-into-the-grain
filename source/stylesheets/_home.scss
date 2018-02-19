@@ -48,8 +48,11 @@ body.index {
   }
 
   .featured-line-up {
+    text-align: center;
+
     .line-up-wrapper {
       @include flex-justify;
+      margin-bottom: 2em;
     }
 
     .line-up-block {
