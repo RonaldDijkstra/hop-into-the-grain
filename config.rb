@@ -48,6 +48,12 @@ helpers do
   def meta_description(page = current_page)
     return page.data.description if page.data.description
   end
+
+  def nav_link(link_text, url, options = {})
+    options[:class] ||= ""
+    options[:class] << " active" if url == current_page.url
+    link_to(link_text, url, options)
+  end
 end
 
 # Build-specific configuration
