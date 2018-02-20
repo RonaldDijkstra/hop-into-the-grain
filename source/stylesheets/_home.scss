@@ -1,11 +1,33 @@
 body.index {
   .hero {
-    padding: 0;
+    background-attachment: scroll;
+    background-color: $blue;
+    background-image: url("../images/hero-sub.png");
+    background-position: center;
+    text-align: center;
 
-    .hero-inner {
-      $hero-image: "../images/hero-home.png";
-      background-image: url($hero-image);
-      height: 970px;
+    img {
+      margin-bottom: 2em;
+    }
+
+    h1 {
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      color: $white;
+      font-size: $base-font-size * 1.6;
+      margin-bottom: 1.6em;
+
+      span {
+        border-left: 1px solid $white;
+        padding: 0 10px;
+
+        &:first-child {
+          border-left: 0;
+          padding-left: 0;
+        }
+      }
     }
   }
 
