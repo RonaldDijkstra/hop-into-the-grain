@@ -16,9 +16,7 @@ body.index {
 
     h2 {
       color: $white;
-      font-size: $base-font-size * 4;
       text-align: center;
-      text-transform: uppercase;
     }
 
     .counter-wrapper {
@@ -63,15 +61,11 @@ body.index {
 
     h2 {
       color: $deep-purple;
-      font-size: $base-font-size * 3;
       text-align: center;
-      text-transform: uppercase;
     }
 
     h3 {
       color: $dark-gray;
-      font-size: $base-font-size * 1.2;
-      font-weight: 500;
       margin-bottom: 2em;
       text-align: center;
     }

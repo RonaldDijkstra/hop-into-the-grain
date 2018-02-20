@@ -67,6 +67,7 @@
 
   .main-nav {
     display: none;
+    font-size: $base-font-size * 1.2;
 
     @include media($menu-desktop) {
       display: inline-block;
@@ -85,8 +86,9 @@
     .nav-item {
       color: $medium-gray;
       display: block;
-      padding-left: 16px;
-      padding-right: 16px;
+      font-family: $heading-font-family;
+      padding-left: 24px;
+      padding-right: 24px;
       text-decoration: none;
       text-transform: uppercase;
 
@@ -99,6 +101,7 @@
   }
 
   .button {
+    font-family: $heading-font-family;
     text-transform: uppercase;
   }
 }
