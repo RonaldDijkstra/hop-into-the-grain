@@ -14,8 +14,12 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :directory_indexes
+activate :sprockets
 
 set :relative_links, true
+set :css_dir, "stylesheets"
+set :js_dir, "javascripts"
+set :images_dir, "images"
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -66,6 +70,8 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :asset_hash
+  set :http_prefix, "/hop-into-the-grain/"
 end
 
 activate :deploy do |deploy|
@@ -73,7 +79,11 @@ activate :deploy do |deploy|
   deploy.remote = "git@github.com:RonaldDijkstra/hop-into-the-grain.git"
 end
 
-after_build do
-  # rename CNAME for gh-pages after build
-  File.rename "build/CNAME.html", "build/CNAME"
-end
+# ready do
+#   sprockets.import_asset "jquery.js"
+# end
+
+# after_build do
+#   # rename CNAME for gh-pages after build
+#   File.rename "build/CNAME.html", "build/CNAME"
+# end
