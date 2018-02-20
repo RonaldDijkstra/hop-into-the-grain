@@ -20,22 +20,39 @@ body.index {
     }
 
     .counter-wrapper {
-      @include flex-justify;
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .counter-block {
-      background: rgba($black, 0.8);
-      border-radius: $base-border-radius;
+      background: transparent;
       color: $white;
-      margin-left: 1em;
-      margin-right: 1em;
-      min-width: 200px;
-      padding: 2em;
+      margin-bottom: 2em;
+      padding-left: 1em;
+      padding-right: 1em;
       text-align: center;
       text-transform: uppercase;
+      width: 50%;
+
+      @include media($medium-up) {
+        width: 25%;
+      }
+
+      @include media($large-up) {
+        width: 25%;
+      }
+
+      .counter-item {
+        background: rgba($black, 0.8);
+        border-radius: $base-border-radius;
+        padding-bottom: 1em;
+        padding-top: 1em;
+      }
 
       span {
         display: block;
+        padding: 0;
       }
 
       .day {
@@ -49,8 +66,8 @@ body.index {
     text-align: center;
 
     .line-up-wrapper {
-      @include flex-justify;
       margin-bottom: 2em;
+      @include flex-justify;
     }
 
     .line-up-block {
