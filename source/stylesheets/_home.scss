@@ -65,15 +65,21 @@ body.index {
   .featured-line-up {
     text-align: center;
 
-    .line-up-wrapper {
+    p {
       margin-bottom: 2em;
-      @include flex-justify;
+    }
+
+    .line-up-wrapper {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .line-up-block {
+      margin-bottom: 2em;
       margin-left: 1em;
       margin-right: 1em;
-      width: 200px;
     }
 
     h2 {
