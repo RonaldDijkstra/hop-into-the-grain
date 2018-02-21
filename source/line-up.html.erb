@@ -11,61 +11,80 @@ description: Check hier de beer, music & food line-ups
 
 <section class="line-up-nav">
   <div class="row">
-    <nav class="line-up-nav-wrapper">
+    <div class="line-up-nav-wrapper" id="line-up-sort">
       <ul>
         <li>
-          <a href="#" class="active">ALL</a>
+          <a class="active" href="#" id="all">ALL</a>
         </li>
         <li>
-          <a href="#">BEER</a>
+          <a href="#" data-cat="beer">BEER</a>
         </li>
         <li>
-          <a href="#">MUSIC</a>
-        </li>
-        <li>
-          <a href="#">FOOD</a>
+          <a href="#" data-cat="band">BANDS</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
 </section>
 
-<section class="content">
+<section class="line-up-overview">
   <div class="row">
-    <div class="line-up-wrapper">
+    <div class="line-up-wrapper" id="line-up-content">
 
-      <div class="line-up-block">
+      <div class="line-up-item" data-cat="beer">
         <%= image_tag("line-up/de-moersleutel.png") %>
       </div>
-
-      <div class="line-up-block">
-        <%= image_tag("line-up/frontaal.png") %>
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/the-lay.png") %>
       </div>
-
-      <div class="line-up-block">
+      <div class="line-up-item" data-cat="beer">
         <%= image_tag("line-up/jopen.png") %>
       </div>
-
-      <div class="line-up-block">
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/merrick-plays-rammstein.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
         <%= image_tag("line-up/het-uiltje.png") %>
       </div>
-
-      <div class="line-up-block">
-        <%= image_tag("line-up/jopen.png") %>
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/ginger-likes.png") %>
       </div>
-
-      <div class="line-up-block">
+      <div class="line-up-item" data-cat="beer">
         <%= image_tag("line-up/frontaal.png") %>
       </div>
-
-      <div class="line-up-block">
-        <%= image_tag("line-up/de-moersleutel.png") %>
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/rum-and-skunk.png") %>
       </div>
-
-      <div class="line-up-block">
-        <%= image_tag("line-up/het-uiltje.png") %>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/oproer.png") %>
       </div>
-
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/meadowlake.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/de-kromme-haring.png") %>
+      </div>
+      <div class="line-up-item" data-cat="band">
+        <%= image_tag("line-up/model-dispose.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/rockin-ludina.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/martinus.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/bax.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/pivo.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/eggens.png") %>
+      </div>
+      <div class="line-up-item" data-cat="beer">
+        <%= image_tag("line-up/brouwerij-groninger.png") %>
+      </div>
     </div>
   </div>
 </section>

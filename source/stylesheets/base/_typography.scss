@@ -34,11 +34,18 @@ p {
 
 a {
   color: $action-color;
+  outline: none;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
 
   &:hover {
     color: shade($action-color, 50%);
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
   }
 }
 

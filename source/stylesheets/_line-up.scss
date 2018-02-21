@@ -8,19 +8,20 @@ body.line-up {
 
   .line-up-nav {
     background: $light-gray;
-    padding: 1em 0;
+    padding: 0;
 
     ul {
-      text-align: center;
+      @include flex-justify();
     }
 
     li {
-      display: inline-block;
+      margin: 0;
 
       a {
         display: block;
+        font-family: $heading-font-family;
         font-size: $base-font-size * 1.4;
-        padding: 0.5em;
+        padding: 1em;
         text-decoration: none;
 
         &.active,
@@ -28,6 +29,8 @@ body.line-up {
         &:focus,
         &:hover {
           background: $medium-gray;
+          border: 0;
+          color: $white;
         }
       }
     }
@@ -37,11 +40,11 @@ body.line-up {
     @include flex-justify;
     flex-wrap: wrap;
 
-    .line-up-block {
+    .line-up-item {
       color: $base-font-color;
       display: inline-block;
       flex-grow: 1;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
       text-align: center;
       width: calc(100% * (1/4) - 10px - 1px);
     }
