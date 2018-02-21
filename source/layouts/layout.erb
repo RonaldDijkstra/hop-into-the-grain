@@ -22,5 +22,6 @@
       <%= yield %>
       <%= partial "footer" %>
     </div>
+    <%= javascript_include_tag "date-countdown.js" if current_page.url == "/" %>
   </body>
 </html>
