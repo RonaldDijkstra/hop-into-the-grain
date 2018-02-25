@@ -3,18 +3,6 @@
   padding: 3em 0;
   position: relative;
 
-  &::before {
-    background-color: rgba($dark-gray, 0.3);
-    content: "";
-    display: flex;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-  }
-
   h1 {
     color: $white;
     text-align: center;

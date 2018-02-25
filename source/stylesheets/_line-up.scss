@@ -2,12 +2,13 @@ body.line-up {
   .hero {
     background-attachment: scroll;
     background-color: $blue;
-    background-image: url("../images/hero-sub.png");
+    background-image: url("../images/hero-home.png");
     background-position: center;
+    margin-bottom: 2em;
   }
 
   .line-up-nav {
-    background: $light-gray;
+    background: $white;
     padding: 0;
 
     ul {
@@ -19,7 +20,7 @@ body.line-up {
 
       a {
         display: block;
-        font-family: $heading-font-family;
+        font-family: $navigation-font-family;
         font-size: $base-font-size * 1.4;
         padding: 1em;
         text-decoration: none;
@@ -28,7 +29,7 @@ body.line-up {
         &:active,
         &:focus,
         &:hover {
-          background: $medium-gray;
+          background: $orange;
           border: 0;
           color: $white;
         }
@@ -43,10 +44,15 @@ body.line-up {
     .line-up-item {
       color: $base-font-color;
       display: inline-block;
-      flex-grow: 1;
       margin-bottom: 2em;
+      padding-left: 1em;
+      padding-right: 1em;
       text-align: center;
-      width: calc(100% * (1/4) - 10px - 1px);
+      width: 50%;
+
+      @include media($medium-up) {
+        width: calc(100% * (1/4) - 10px - 1px);
+      }
     }
   }
 }

@@ -1,13 +1,20 @@
 body.index {
+
+  h2 {
+    font-family: $heading-font-family;
+    font-size: $base-font-size * 4;
+  }
+
   .hero {
     background-attachment: scroll;
     background-color: $blue;
-    background-image: url("../images/hero-sub.png");
+    background-image: url("../images/hero-home.png");
     background-position: center;
     text-align: center;
 
     img {
-      margin-bottom: 2em;
+      display: block;
+      margin: 0 auto 2em;
     }
 
     h1 {
@@ -74,11 +81,13 @@ body.index {
 
       span {
         display: block;
+        font-family: $heading-font-family;
+        font-size: $base-font-size * 2;
         padding: 0;
       }
 
       .day {
-        font-size: $base-font-size * 3;
+        font-size: $base-font-size * 4;
         font-weight: 900;
       }
     }
