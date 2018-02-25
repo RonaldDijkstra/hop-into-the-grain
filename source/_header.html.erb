@@ -1,34 +1,32 @@
 <header class="header" data-header="fixed">
-  <div class="row">
-    <div class="header-wrapper">
+  <div class="header-wrapper">
 
-      <div class="logo">
-        <% link_to("/") do %>
-          <%= image_tag "logo-hop-into-the-grain.png", title: "Hop! into the Grain", alt: "Hop! into the Grain" %>
-        <% end %>
-      </div>
-
-      <a href="#" class="nav-trigger">
-        <span aria-hidden="true"></span>
-      </a>
-
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <%= nav_link "Line-up", "/line-up/", class: "nav-item" %>
-          </li>
-          <li>
-            <%= nav_link "Info", "/info/", class: "nav-item" %>
-          </li>
-          <li>
-            <%= nav_link "Contact", "/contact/", class: "nav-item" %>
-          </li>
-          <li>
-            <a class="button orange" href="#">Tickets &raquo;</a>
-          </li>
-        </ul>
-      </nav>
-
+    <div class="logo">
+      <% link_to("/") do %>
+        <%= image_tag "logo-hop-into-the-grain.png", title: "Hop! into the Grain", alt: "Hop! into the Grain" %>
+      <% end %>
     </div>
+
+    <a href="#" class="nav-trigger">
+      <span aria-hidden="true"></span>
+    </a>
+
+    <nav class="main-navigation">
+      <ul>
+        <li>
+          <%= nav_link "Line-up", "/line-up/", class: "nav-item" %>
+        </li>
+        <li>
+          <%= nav_link "Info", "/info/", class: "nav-item" %>
+        </li>
+        <li>
+          <%= nav_link "Contact", "/contact/", class: "nav-item" %>
+        </li>
+        <li>
+          <a class="button orange" href="#">Tickets &raquo;</a>
+        </li>
+      </ul>
+    </nav>
+
   </div>
 </header>

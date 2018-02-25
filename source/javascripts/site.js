@@ -2,4 +2,5 @@
 
 //= require jquery
 
+//= require _menu-toggle
 //= require _filter

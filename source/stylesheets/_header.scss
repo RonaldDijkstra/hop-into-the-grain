@@ -1,18 +1,54 @@
 .header {
   background: $white;
   height: 90px;
-  text-align: right;
+  position: relative;
+
+  .header-wrapper {
+    padding-left: 1em;
+
+    @include media($menu-desktop) {
+      @include outer-container;
+      padding: 0 1em;
+      position: relative;
+    }
+  }
 
   .logo {
     float: left;
     line-height: 90px;
+    max-width: 240px;
+    position: relative;
+    z-index: 9999;
 
     img {
       display: inline-block;
-      height: 40px;
+      height: auto;
       margin-top: 0;
+      max-width: 100%;
       vertical-align: middle;
-      width: 338px;
+    }
+  }
+
+  .main-navigation {
+    background-color: $white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: -230px;
+    top: 0;
+    transition: right 300ms ease-in-out;
+    width: 230px;
+
+    @include media($menu-desktop) {
+      height: auto;
+      position: relative;
+      right: 0;
+      width: auto;
+    }
+
+    body.menu-open & {
+      right: 0;
     }
   }
 
@@ -30,6 +66,20 @@
 
     @include media($menu-desktop) {
       display: none;
+    }
+
+    &.menu-open {
+      span {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
     }
 
     span {
@@ -65,43 +115,50 @@
     }
   }
 
-  .main-nav {
-    display: none;
+  ul {
+    margin: 0;
+    padding-left: 2em;
+    padding-top: 2em;
+
+    @include media($menu-desktop) {
+      padding-left: 0;
+      padding-top: 0;
+      text-align: right;
+    }
+  }
+
+  li {
     font-size: $base-font-size * 1.2;
+    list-style: none;
+    padding: 0.4em 0;
 
     @include media($menu-desktop) {
       display: inline-block;
+      line-height: 90px;
+      padding: 0 1em;
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
 
-    ul {
-      align-items: center;
-      display: flex;
-      height: 90px;
+    &:first-child {
+      padding-top: 0;
     }
+  }
 
-    li {
-      display: inline-block;
-    }
+  a {
+    color: $medium-gray;
+    font-family: $heading-font-family;
+    text-decoration: none;
+    text-transform: uppercase;
 
-    .nav-item {
-      color: $medium-gray;
-      display: block;
-      font-family: $heading-font-family;
-      padding-left: 24px;
-      padding-right: 24px;
-      text-decoration: none;
-      text-transform: uppercase;
-
+    &.nav-item {
       &.active,
       &:active,
       &:hover, {
         color: $orange;
       }
     }
-  }
-
-  .button {
-    font-family: $heading-font-family;
-    text-transform: uppercase;
   }
 }
