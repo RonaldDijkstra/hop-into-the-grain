@@ -4,7 +4,18 @@
   position: relative;
 
   h1 {
+    background: $orange;
     color: $white;
+    display: table;
+    margin: 0 auto;
+    padding: 0 0.4em;
     text-align: center;
+    transform: rotate(-2deg);
+    width: auto;
+
+    span {
+      display: block;
+      transform: rotate(2deg);
+    }
   }
 }

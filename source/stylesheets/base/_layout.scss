@@ -17,7 +17,6 @@ body {
 body {
   background: $white;
   margin: 0;
-
   overflow-x: hidden;
   position: relative;
   right: 0;
@@ -29,6 +28,10 @@ body {
 
   &.menu-open {
     right: 230px;
+
+    @include media($menu-desktop) {
+      right: 0;
+    }
   }
 }
 
