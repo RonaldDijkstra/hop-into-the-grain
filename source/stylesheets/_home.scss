@@ -22,12 +22,13 @@ body.index {
     }
 
     h2 {
-      color: $white;
-      font-size: $base-font-size * 1.6;
-      margin-bottom: 1.6em;
+      color: $orange;
+      font-family: $navigation-font-family;
+      font-size: $base-font-size * 1.4;
+      margin-bottom: 1.5em;
 
       span {
-        border-left: 1px solid $white;
+        border-left: 2px solid $orange;
         padding: 0 10px;
 
         &:first-child {
@@ -96,32 +97,33 @@ body.index {
   .featured-line-up {
     text-align: center;
 
+    h2 {
+      color: $very-dark-grayish-red;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
     p {
       margin-bottom: 2em;
     }
 
     .line-up-wrapper {
-      align-items: center;
-      display: flex;
+      @include flex-justify;
       flex-wrap: wrap;
-      justify-content: center;
     }
 
     .line-up-block {
+      color: $base-font-color;
+      display: inline-block;
       margin-bottom: 2em;
-      margin-left: 1em;
-      margin-right: 1em;
-    }
-
-    h2 {
-      color: $deep-purple;
+      padding-left: 1em;
+      padding-right: 1em;
       text-align: center;
-    }
+      width: 50%;
 
-    h3 {
-      color: $dark-gray;
-      margin-bottom: 2em;
-      text-align: center;
+      @include media($medium-up) {
+        width: calc(100% * (1/4) - 10px - 1px);
+      }
     }
   }
 }
