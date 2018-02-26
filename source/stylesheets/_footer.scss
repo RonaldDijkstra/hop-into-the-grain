@@ -1,5 +1,11 @@
 footer {
-  background: $light-gray;
+  background: $very-dark-grayish-red;
+  color: $white;
+  font-family: $navigation-font-family;
   padding: 3em 0;
   text-align: center;
+
+  p {
+    font-size: $base-font-size * 1.2;
+  }
 }
