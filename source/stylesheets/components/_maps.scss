@@ -1,0 +1,15 @@
+.map {
+  $desktop-mode: $medium-up;
+
+  clear: both;
+  position: relative;
+
+  .map-canvas {
+    height: 300px;
+    width: 100%;
+
+    @include media ($desktop-mode) {
+      height: 400px;
+    }
+  }
+}
