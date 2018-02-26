@@ -71,7 +71,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  set :http_prefix, "/hop-into-the-grain/"
 end
 
 activate :deploy do |deploy|

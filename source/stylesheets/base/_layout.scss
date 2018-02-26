@@ -20,11 +20,7 @@ body {
   overflow-x: hidden;
   position: relative;
   right: 0;
-  transition: right 300ms ease-in-out;
-
-  @include media($menu-desktop) {
-    transition: none;
-  }
+  transition: right 300ms ease;
 
   &.menu-open {
     right: 230px;

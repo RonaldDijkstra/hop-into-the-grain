@@ -37,7 +37,6 @@
     position: fixed;
     right: -230px;
     top: 0;
-    transition: right 300ms ease-in-out;
     width: 230px;
 
     @include media($menu-desktop) {

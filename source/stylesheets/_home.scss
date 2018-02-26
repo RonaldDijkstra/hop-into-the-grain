@@ -1,5 +1,4 @@
 body.index {
-
   h2 {
     font-family: $heading-font-family;
     font-size: $base-font-size * 4;
@@ -7,7 +6,7 @@ body.index {
 
   .hero {
     background-attachment: scroll;
-    background-color: $blue;
+    background-color: $light-blue;
     background-image: url("../images/hero-home.png");
     background-position: center;
     text-align: center;
