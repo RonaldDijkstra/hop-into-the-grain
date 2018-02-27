@@ -6,13 +6,14 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-      <% if current_page == "/" %>
+      <% if current_page.url == "/" %>
         Hop! into the Grain - Craft Beer & Music Festival - MAY 26th, 2018 - Groningen
       <% else %>
         <%= current_page.data.title %> | Hop! into the Grain 2018
       <% end %>
     </title>
     <meta name="description" content="<%= h(meta_description) %>">
+    <%= partial "favicon" %>
     <%= stylesheet_link_tag "main" %>
   </head>
   <body class="<%= page_classes %>">
