@@ -68,6 +68,9 @@
     }
 
     &.menu-open {
+      position: fixed;
+      right: 230px;
+
       span {
         background-color: transparent;
 

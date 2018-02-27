@@ -7,6 +7,22 @@ footer {
 
   p {
     font-size: $base-font-size * 1.2;
+    margin-bottom: 2em;
+
+    span {
+      display: block;
+
+      @include media($large-up) {
+        border-left: 1px solid $white;
+        display: inline;
+        padding: 0 0.6em;
+
+        &:first-child {
+          border-left: 0;
+          padding-left: 0;
+        }
+      }
+    }
 
     &.open-source {
       font-family: $base-font-family;
