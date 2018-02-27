@@ -53,6 +53,13 @@ helpers do
     return page.data.description if page.data.description
   end
 
+  # Use frontmatter for meta robots or use default
+  def robots(page = current_page)
+    return page.data.robots if page.data.robots
+    "noydir,noodp,index,follow"
+  end
+
+  # Active navigation items
   def nav_link(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " active" if url == current_page.url
