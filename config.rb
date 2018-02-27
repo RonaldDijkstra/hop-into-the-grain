@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+set :full_url, "http://staging.hopintothegrain.nl"
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -65,6 +67,11 @@ helpers do
     options[:class] << " active" if url == current_page.url
     link_to(link_text, url, options)
   end
+
+  # Retrieve full_url
+  def full_url(url)
+    URI.join(config[:full_url], url).to_s
+  end
 end
 
 # Build-specific configuration
@@ -84,12 +91,3 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.remote = "git@github.com:RonaldDijkstra/hop-into-the-grain.git"
 end
-
-# ready do
-#   sprockets.import_asset "jquery.js"
-# end
-
-# after_build do
-#   # rename CNAME for gh-pages after build
-#   File.rename "build/CNAME.html", "build/CNAME"
-# end

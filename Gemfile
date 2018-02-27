@@ -14,6 +14,7 @@ gem 'neat', '~> 1.7.2'
 
 # Others
 gem 'rake'
+gem 'builder' # For feed.xml.builder
 
 # Frontend
 source 'https://rails-assets.org' do
