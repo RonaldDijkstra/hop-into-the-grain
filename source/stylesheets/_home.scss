@@ -50,12 +50,18 @@ body.index {
 
   .counter {
     background: $orange;
+    color: $white;
     padding-bottom: 4em;
     padding-top: 4em;
+    text-align: center;
+
+    p {
+      margin-bottom: 2em;
+    }
 
     h2 {
       color: $white;
-      text-align: center;
+      margin-bottom: 0;
     }
 
     .counter-wrapper {
