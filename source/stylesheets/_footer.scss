@@ -28,8 +28,14 @@ footer {
       font-family: $base-font-family;
       font-size: $base-font-size * 0.8;
 
+      span {
+        @include media($large-up) {
+          border-color: $light-orange;
+        }
+      }
+
       a {
-        color: #d1b28b;
+        color: $light-orange;
 
         &:hover {
           text-decoration: none;
