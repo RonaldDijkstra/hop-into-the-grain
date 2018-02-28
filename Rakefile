@@ -1,18 +1,4 @@
-## Serve
-# namespace :serve do
-#   def serve(env)
-#     puts "*"*50
-#     puts "* Serving Beer"
-#     puts "*"*50
-#     system "bundle exec middleman"
-#   end
-#
-#   desc "Serve Beer"
-#   task :nl do
-#     serve :nl
-#   end
-# end
-
+# Serve
 task :serve do
   puts "*"*50
   puts "Serving Beer!"
@@ -20,11 +6,29 @@ task :serve do
   system "bundle exec middleman"
 end
 
+# Build
 task :build do
   puts "*"*50
   puts "Brewing Beer!"
   puts "*"*50
   system "bundle exec middleman build --clean" or exit(1)
+end
+
+# Test
+task :test do
+  begin
+    Rake::Task["build"].invoke
+  rescue SystemExit => e
+    puts "*"*50
+    puts "* Build failed, skipping test"
+    puts "*"*50
+    exit(e.status)
+  end
+
+  puts "*"*50
+  puts "* Build successful, Test Beer ... "
+  puts "*"*50
+  system "ruby test.rb" or exit(1)
 end
 
 # Deploy
