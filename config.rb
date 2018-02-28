@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-set :full_url, "http://staging.hopintothegrain.nl"
+set :full_url, "http://www.hopintothegrain.nl"
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
