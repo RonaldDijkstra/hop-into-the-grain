@@ -1,6 +1,6 @@
 ## Hop! into the Grain Festival
 
-Repo for a *static* beer & music festival website: http://www.hopintothegrainfestival.nl
+Repo for a *static* beer & music festival website: https://www.hopintothegrainfestival.nl
 
 Built with [Middleman](https://github.com/middleman/middleman), hand-crafted frontend development.
 
