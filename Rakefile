@@ -20,13 +20,13 @@ task :test do
     Rake::Task["build"].invoke
   rescue SystemExit => e
     puts "*"*50
-    puts "* Build failed, skipping test"
+    puts "* Brew failed, abort test"
     puts "*"*50
     exit(e.status)
   end
 
   puts "*"*50
-  puts "* Build successful, Test Beer ... "
+  puts "* Brew successful, Taste Beer ... "
   puts "*"*50
   system "ruby test.rb" or exit(1)
 end
@@ -37,13 +37,13 @@ task :deploy do
     Rake::Task["build"].invoke
   rescue SystemExit => e
     puts "*"*50
-    puts "* Build failed, skipping deployment"
+    puts "* Brew failed, abort drinking"
     puts "*"*50
     exit(e.status)
   end
 
   puts "*"*50
-  puts "* Build successful, Deploying Beer... "
+  puts "* Brew successful, Drinking Beer ... "
   puts "*"*50
   system "bundle exec middleman deploy" or exit(1)
 end
