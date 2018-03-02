@@ -4,15 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-      <% if current_page.url == "/" %>
-        Hop! into the Grain - Craft Beer & Music Festival - MAY 26th, 2018 - Groningen
-      <% else %>
-        <%= current_page.data.title %> | Hop! into the Grain 2018
-      <% end %>
-    </title>
+    <title><%= page_title(current_page) %></title>
     <meta name="description" content="<%= h(meta_description) %>">
     <meta name="robots" content="<%= robots %>">
+    <%= partial "open-graph" -%>
     <%= partial "favicon" -%>
     <%= stylesheet_link_tag "main" %>
     <%= partial "analytics" %>

@@ -72,6 +72,13 @@ helpers do
   def full_url(url)
     URI.join(config[:full_url], url).to_s
   end
+
+  # Use frontmatter for page titles
+  def page_title(page, appendCompanyName=true)
+    appendTitle = appendCompanyName ? " | Hop! into the Grain 2018" : ""
+    return page.data.title + appendTitle if page.data.title
+    "Hop into the Grain! - Craft Beer & Music Festival - 26 mei 2018 - Groningen"
+  end
 end
 
 # Build-specific configuration
@@ -84,7 +91,7 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
+  activate :asset_hash, ignore: ["images/open-graph.png"]
 end
 
 activate :deploy do |deploy|
