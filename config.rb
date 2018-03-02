@@ -77,7 +77,7 @@ helpers do
   def page_title(page, appendCompanyName=true)
     appendTitle = appendCompanyName ? " | Hop! into the Grain 2018" : ""
     return page.data.title + appendTitle if page.data.title
-    "Hop into the Grain! - Craft Beer & Music Festival - 26 mei 2018 - Groningen"
+    "Hop! into the Grain 2018 | Craft Beer & Music Festival | 26 mei 2018 - Groningen"
   end
 end
 
