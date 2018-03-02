@@ -1,4 +1,4 @@
-Sitemap: https://www.hopintothegrain.nl/sitemap.xml
+Sitemap: https://www.hopintothegrainfestival.nl/sitemap.xml
 
 User-agent: *
 
