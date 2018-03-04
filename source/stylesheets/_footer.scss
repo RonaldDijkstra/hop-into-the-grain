@@ -5,6 +5,11 @@ footer {
   padding: 3em 0;
   text-align: center;
 
+  h4 {
+    font-family: $navigation-font-family;
+    font-size: $base-font-size * 1.4;
+  }
+
   p {
     font-size: $base-font-size * 1.2;
     margin-bottom: 2em;
@@ -41,6 +46,20 @@ footer {
           text-decoration: none;
         }
       }
+    }
+  }
+
+  .footer-logos {
+    margin-bottom: 2em;
+
+    .footer-logo {
+      display: inline-block;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+
+    p {
+      margin-bottom: 0.5em;
     }
   }
 }
