@@ -26,7 +26,7 @@ select,
 textarea {
   display: block;
   font-family: $base-font-family;
-  font-size: 16px;
+  font-size: $base-font-size;
 }
 
 #{$all-text-inputs} {
@@ -37,7 +37,7 @@ textarea {
   box-shadow: $_form-box-shadow;
   box-sizing: border-box;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  padding: 1em;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -92,5 +92,23 @@ select {
   &:focus {
     outline: $focus-outline;
     outline-offset: $focus-outline-offset;
+  }
+}
+
+.form-contact {
+  @include clearfix;
+}
+
+.form-name {
+  @include media($medium-up) {
+    float: left;
+    width: 48.5%;
+  }
+}
+
+.form-email {
+  @include media($medium-up) {
+    float: right;
+    width: 48.5%;
   }
 }
