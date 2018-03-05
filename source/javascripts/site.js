@@ -4,4 +4,5 @@
 
 //= require _menu-toggle
 //= require _filter
+//= require _playlist
 //= require _maps
