@@ -2,17 +2,19 @@
   font-family: "icomoon";
   font-style: normal;
   font-weight: normal;
-  src:  url("../fonts/icomoon.eot?rlixsm");
-  src:  url("../fonts/icomoon.eot?rlixsm#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?rlixsm") format("truetype"),
-    url("../fonts/icomoon.woff?rlixsm") format("woff"),
-    url("../fonts/icomoon.svg?rlixsm#icomoon") format("svg");
+  src:  url("../fonts/icomoon.eot?y16b4a");
+  src:  url("../fonts/icomoon.eot?y16b4a#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?y16b4a") format("truetype"),
+    url("../fonts/icomoon.woff?y16b4a") format("woff"),
+    url("../fonts/icomoon.svg?y16b4a#icomoon") format("svg");
 }
 
 [class^="icon-"],
 [class*=" icon-"] {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  border-radius: $base-border-radius;
+  color: $white;
   display: inline-block;
   font-family: "icomoon" !important;
   font-size: $base-font-size * 1.4;
@@ -20,9 +22,16 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
+  padding: 0.2em;
   speak: none;
+  text-decoration: none;
   text-transform: none;
+  transition: background-color 150ms ease;
   vertical-align: middle;
+
+  span {
+    display: none;
+  }
 }
 
 .icon-instagram:before {
@@ -30,20 +39,74 @@
   content: "\e901";
 }
 
-.icon-twitter:before {
-  color: #1da1f2;
-  content: "\e902";
+.icon-envelope {
+  $color: $medium-gray;
+  background: $color;
+  color: $white;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: darken($color, 10);
+    color: $white;
+  }
+
+  &::before {
+    content: "\e900";
+  }
 }
 
-.icon-whatsapp:before {
-  color: #25d366;
-  content: "\e903";
+.icon-twitter {
+  $color: #1da1f2;
+  background: $color;
+  color: $white;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: darken($color, 10);
+    color: $white;
+  }
+
+  &::before {
+    content: "\e902";
+  }
+}
+
+.icon-whatsapp {
+  $color: #25d366;
+  background: $color;
+  color: $white;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: darken($color, 10);
+    color: $white;
+  }
+
+  &::before {
+    content: "\e903";
+  }
 }
 
 .icon-link:before {
   content: "\e9cb";
 }
 
-.icon-facebook:before {
-  content: "\ea90";
+.icon-facebook {
+  $color: #3b5998;
+  background: $color;
+  color: $white;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: darken($color, 10);
+    color: $white;
+  }
+
+  &::before {
+    content: "\ea90";
+  }
 }
