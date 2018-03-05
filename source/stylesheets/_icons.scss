@@ -90,8 +90,21 @@
   }
 }
 
-.icon-link:before {
-  content: "\e9cb";
+.icon-link {
+  $color: $dark-gray;
+  background: $color;
+  color: $white;
+
+  &.active,
+  &:active,
+  &:hover {
+    background-color: darken($color, 10);
+    color: $white;
+  }
+
+  &::before {
+    content: "\e9cb";
+  }
 }
 
 .icon-facebook {
