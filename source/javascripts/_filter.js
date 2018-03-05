@@ -15,8 +15,6 @@ var lineUpFilter = {
 
           if (!$a.is('#all')) {
 
-            $('#all').removeClass('active');
-
             var items = $('div[data-cat=' + $a.data('cat') + ']', '#line-up-content');
 
             lineUpFilter.sort(items);
@@ -25,6 +23,9 @@ var lineUpFilter = {
 
             lineUpFilter.showAll($('div.line-up-item', '#line-up-content'));
           }
+
+          $('.filter a.active').removeClass('active');
+          $($a).addClass('active');
         });
       },
 };
