@@ -10,7 +10,7 @@
     <%= partial "open-graph" -%>
     <%= partial "favicon" -%>
     <%= stylesheet_link_tag "main" %>
-    <%= partial "analytics" %>
+    <%= partial "analytics" unless development? %>
   </head>
   <body class="<%= page_classes %>">
     <div class="main" role="main">
