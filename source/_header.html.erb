@@ -2,31 +2,31 @@
   <div class="header-wrapper">
 
     <div class="logo">
-      <% link_to("/") do %>
-        <%= image_tag "logo-hop-into-the-grain.png", title: "Hop! into the Grain", alt: "Hop! into the Grain" %>
+      <% link_to("/", title: "Home") do %>
+        <%= image_tag "logo-hop-into-the-grain.png", title: "Hop! into the Grain Craft Beer & Music Festival 2018", alt: "Hop! into the Grain Craft Beer & Music Festival 2018" %>
       <% end %>
     </div>
 
-    <a href="#" class="nav-trigger">
+    <a href="#" class="nav-trigger" title: "Open Navigation">
       <span aria-hidden="true"></span>
     </a>
 
     <nav class="main-navigation">
       <ul>
         <li>
-          <%= nav_link "Line-up", "/line-up/", class: "nav-item" %>
+          <%= nav_link "Line-up", "/line-up/", class: "nav-item", title: "Line-up" %>
         </li>
         <li>
-          <%= nav_link "Info", "/info/", class: "nav-item" %>
+          <%= nav_link "Info", "/info/", class: "nav-item", title: "Informatie" %>
         </li>
         <li>
-          <%= nav_link "Contact", "/contact/", class: "nav-item" %>
+          <%= nav_link "Contact", "/contact/", class: "nav-item", title: "Contact" %>
         </li>
         <li>
-          <a class="icon-facebook" href="https://www.facebook.com/events/191110228287711/" target="_blank"></a>
+          <a class="icon-facebook" href="https://www.facebook.com/events/191110228287711/" target="_blank" title="Check het Facebook event"></a>
         </li>
         <li>
-          <a class="button orange" href="https://frontoffice.paylogic.nl/?event_id=122408&point_of_sale_id=17537" target="_blank">Tickets &raquo;</a>
+          <a class="button orange" href="https://frontoffice.paylogic.nl/?event_id=122408&point_of_sale_id=17537" target="_blank" title="Koop nu je tickets">Tickets &raquo;</a>
         </li>
       </ul>
     </nav>

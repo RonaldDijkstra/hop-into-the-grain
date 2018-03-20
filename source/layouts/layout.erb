@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= page_title(current_page) %></title>
+    <% if current_page.url == "/" %>
+      <title>Welkom bij Hop! into the Grain Craft Beer & Music Festival</title>
+    <% else %>
+      <title><%= current_page.data.title %> | Hop! into the Grain Craft Beer & Music Festival</title>
+    <% end %>
     <meta name="description" content="<%= h(meta_description) %>">
     <meta name="robots" content="<%= robots %>">
     <%= partial "open-graph" -%>
