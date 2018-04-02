@@ -1,6 +1,6 @@
 function updateTimer() {
   future  = Date.parse('May 26, 2018 12:00:00');
-  now     = new Date() - 3600000;
+  now     = new Date();
   diff    = future - now;
 
   days  = Math.floor(diff / (1000 * 60 * 60 * 24));
