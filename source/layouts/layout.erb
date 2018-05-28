@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <% if current_page.url == "/" %>
-      <title>Welkom bij Hop! into the Grain Craft Beer & Music Festival</title>
+      <title>Welkom bij Hop! into the Grain Craft Beer & Music Festival 2019</title>
     <% else %>
       <title><%= current_page.data.title %> | Hop! into the Grain Craft Beer & Music Festival</title>
     <% end %>
@@ -20,7 +20,6 @@
     <div class="main" role="main">
       <%= partial "header" %>
       <%= yield %>
-      <%= partial "share" %>
       <%= partial "footer" %>
     </div>
     <%= javascript_include_tag "site" %>
