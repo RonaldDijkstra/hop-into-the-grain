@@ -27,8 +27,6 @@ task :build do
   puts "== Project: " + project_name.green
   puts "== Brewing...".green
   system "bundle exec middleman build" || exit(1)
-  FileUtils.rm_rf("build/en/beers/", verbose: true)
-  FileUtils.rm_rf("build/nl/", verbose: true)
 end
 
 ## Build & Proof
@@ -53,5 +51,5 @@ task :pr do
   end
 
   `git push -u origin #{branch_name}`
-  `open https://github.com/RonaldDijkstra/justinbeer/compare/#{branch_name}`
+  `open https://github.com/RonaldDijkstra/hop-into-the-grain/compare/#{branch_name}`
 end
