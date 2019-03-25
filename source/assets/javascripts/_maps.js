@@ -12,7 +12,7 @@ $(document).ready(function () {
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
     //Callout Content
-    var contentString = 'Just in Beer Craft Beer Store';
+    var contentString = 'EM2 Venue';
 
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
@@ -25,7 +25,7 @@ $(document).ready(function () {
       position: myLatlng,
       map: map,
       icon: imagePath,
-      title: 'Just in Beer Craft Beer Store',
+      title: 'EM2 Venue',
     });
 
     google.maps.event.addListener(marker, 'click', function () {
