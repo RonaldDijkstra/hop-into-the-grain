@@ -1,0 +1,25 @@
+---
+  nl:
+    CNAME: www.hopintothegrainfestival.nl
+
+    site:
+      description: "In een ongedwongen sfeer lekker van de diverse biertjes en fijne muziek genieten. "
+    form:
+      email: "Je e-mailadres"
+      message: "Bericht"
+      name: "Je naam"
+      submit: "Verstuur"
+    navigation:
+      contact: "Contact"
+      index: "Home"
+    # Pages
+    pages:
+      x404:
+        title: "404 - pagina niet gevonden"
+      contact:
+        title: "Contact"
+      index:
+        banner:
+          title: "Welkom bij HOP! Into the Grain 2019"
+      thanks:
+        title: "Bedankt!"

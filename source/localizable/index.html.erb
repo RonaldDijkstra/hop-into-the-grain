@@ -1,0 +1,22 @@
+---
+description:
+  nl: "Dé speciaalbierwinkel van Groningen met het grootste en beste assortiment. Wij zijn geopend van dinsdag t/m zondag."
+  en: "The craft beer store in Groningen with the largest and best collection of beer. We are open from Tuesday to Sunday."
+sitemap_priority: 1
+blog: menu
+---
+
+<%= partial "partials/banner", locals: { variant: "variant-big",
+                                         variant_overlay: "primary-overlay",
+                                         background_image: "banner-homepage.jpg",
+                                         title: t("pages.index.banner.title")} %>
+
+<section class="introduction single-column">
+  <div class="grid-row">
+    <article>
+      <%= partial "homepage/content" %>
+    </article>
+  </div>
+</section>
+
+<%= partial "partials/maps" %>
