@@ -20,6 +20,17 @@
         title: "Contact"
       index:
         banner:
-          title: "Welkom bij HOP! Into the Grain 2019"
+          title: "HOP! Into the Grain 2019"
+          date: "25 mei, 15.00-23.00"
+          location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
       thanks:
         title: "Bedankt!"
+    sections:
+      bands:
+        title: "Bands"
+      breweries:
+        title: "Brouwerijen"
+      extra-info:
+        title: "Extra info"
+      tickets:
+        title: "Tickets"

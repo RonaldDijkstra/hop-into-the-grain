@@ -1,14 +1,9 @@
 header.banner {
   background: $slightly-desaturated-orange no-repeat center center fixed;
-  background-attachment: scroll;
   background-size: cover;
   color: $white;
-  padding: 0 $base-spacing;
+  padding: 60px $base-spacing 0;
   position: relative;
-
-  @include grid-media($for-desktop-up) {
-    padding: 0;
-  }
 
   &.primary-overlay {
     &::before {

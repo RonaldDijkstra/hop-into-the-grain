@@ -9,13 +9,49 @@ blog: menu
 <%= partial "partials/banner", locals: { variant: "variant-big",
                                          variant_overlay: "primary-overlay",
                                          background_image: "banner-homepage.jpg",
-                                         title: t("pages.index.banner.title")} %>
+                                         svg_image: "logo-hop-into-the-grain-festival.svg",
+                                         title: t("pages.index.banner.title"),
+                                         location: t("pages.index.banner.location"),
+                                         date: t("pages.index.banner.date")} %>
 
 <section class="introduction single-column">
   <div class="grid-row">
     <article>
-      <%= partial "homepage/content" %>
+      <%= partial "homepage/informatie" %>
     </article>
+  </div>
+</section>
+
+<section class="bands">
+  <div class="grid-row">
+    <h2><%= t("sections.bands.title") %></h2>
+  </div>
+</section>
+
+<section class="breweries">
+  <div class="grid-row">
+    <h2><%= t("sections.breweries.title") %></h2>
+  </div>
+</section>
+
+<section class="tickets">
+  <div class="grid-row">
+    <h2><%= t("sections.tickets.title") %></h2>
+  </div>
+</section>
+
+<section class="extra-info">
+  <div class="grid-row">
+    <h2><%= t("sections.extra-info.title") %></h2>
+  </div>
+</section>
+
+<section class="form">
+  <div class="grid-row form-grid-row">
+    <%= partial "partials/form", locals: { name: "contact",
+                                           fields: ["name", "email", "message"],
+                                           button_text: t("form.submit"),
+                                           button_variant: "orange"} %>
   </div>
 </section>
 
