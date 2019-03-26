@@ -7,7 +7,6 @@ ruby "2.4.3"
 # Middleman Core & Extensions
 gem "middleman"
 gem "middleman-autoprefixer"
-gem "middleman-blog"
 gem "middleman-inline_svg"
 gem "middleman-minify-html"
 gem "middleman-sprockets"
