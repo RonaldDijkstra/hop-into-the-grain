@@ -5,7 +5,6 @@
     # Path translations
     paths:
       bedankt: "thanks"
-      contact: "contact"
     site:
       description: "The place to be for beer-lovers in the North of the Netherlands, with an surprising craft-beer and music line-up. "
     form:
@@ -25,10 +24,10 @@
     pages:
       x404:
         title: "404 - Page Not Found"
-      contact:
-        title: "Contact"
       index:
         banner:
           title: "Welcome to HOP! Into the Grain 2019"
+          date: "May 25th 2019, 15.00-23.00"
+          location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
       thanks:
         title: "Thanks!"

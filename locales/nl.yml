@@ -21,12 +21,10 @@
     pages:
       x404:
         title: "404 - pagina niet gevonden"
-      contact:
-        title: "Contact"
       index:
         banner:
           title: "HOP! Into the Grain 2019"
-          date: "25 mei, 15.00-23.00"
+          date: "25 mei 2019, 15.00-23.00"
           location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
       thanks:
         title: "Bedankt!"

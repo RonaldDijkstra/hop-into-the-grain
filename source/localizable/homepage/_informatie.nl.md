@@ -1,4 +1,4 @@
-Het leukste en verrassende Craft Beer & Music Festival van het Noorden!
+## Het leukste en verrassendste Craft Beer & Music Festival van het Noorden!
 
 Het blijft een mooie combinatie, hop en graan; twee niet te missen ingrediënten in het heerlijke gerstenat. De hoeveelheid verschillende bieren die je ermee kan creëren is eindeloos.
 Voor een beetje bierliefhebber is het natuurlijk zaak om op de hoogte te blijven van de nieuwste en lekkerste brouwsels. Een bezoek aan Hop! Into the Grain is dan een must!
@@ -8,4 +8,4 @@ Na het succes van vorig jaar vieren we natuurlijk ook dit bierfestijn [bij EM2](
 
 Er is ook een mooie buitenterrein dat ruimte biedt voor diverse (food) stands, terrassen en zithoekjes.
 
-Proost!
+Proost en tot dan! 🍻
