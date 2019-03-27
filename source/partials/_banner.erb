@@ -5,6 +5,8 @@
 
       <% if locals[:svg_image] %>
         <%= inline_svg svg_image, alt: title, class: "banner-image" %>
+      <% elsif locals[:png_image] %>
+        <%= image_tag png_image, alt: title, class: "banner-image" %>
       <% else %>
         <%= content_tag title_tag ||= :h1, class: "title" do title end %>
       <% end %>
