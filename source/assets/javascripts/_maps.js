@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
   function initialize() {
-    var myLatlng = new google.maps.LatLng(53.2160138, 6.5646375);
-    var imagePath = '../assets/images/maps-marker.png';
+    var myLatlng = new google.maps.LatLng(53.210473, 6.539195);
+    var imagePath = '../assets/images/maps-marker.svg';
     var mapOptions = {
       zoom: 15,
       center: myLatlng,
