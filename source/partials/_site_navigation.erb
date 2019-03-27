@@ -1,9 +1,4 @@
 <nav class="site-navigation" role="navigation">
-  <div class="logo">
-    <% link_to("/", relative: false, class: "root-link home") do %>
-      
-    <% end %>
-  </div>
 
   <a id="mobile-toggle" class="mobile-toggle">
     <span></span>
@@ -14,10 +9,10 @@
   <div class="navigation-bar">
     <ul class="menu">
       <li>
-        <%= current_link_to t("navigation.index"), "/index.html", relative: false, class: "root-link" %>
+        <%= current_link_to t("navigation.index"), "#home", class: "root-link", data: "data-scroll-to" %>
       </li>
       <li>
-        <%= current_link_to t("navigation.contact"), "/contact.html", class: "root-link" %>
+        <%= current_link_to t("navigation.contact"), "#contact", class: "root-link", data: "data-scroll-to"  %>
       </li>
       <li>
         <% if lang == :nl %>

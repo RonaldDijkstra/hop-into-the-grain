@@ -6,7 +6,8 @@ sitemap_priority: 1
 blog: menu
 ---
 
-<%= partial "partials/banner", locals: { variant: "variant-big",
+<%= partial "partials/banner", locals: { id: "home",
+                                         variant: "variant-big",
                                          variant_overlay: "primary-overlay",
                                          background_image: "banner-homepage.jpg",
                                          svg_image: "logo-hop-into-the-grain-festival.svg",
@@ -46,7 +47,7 @@ blog: menu
   </div>
 </section>
 
-<section class="form">
+<section class="form" id="contact">
   <div class="grid-row form-grid-row">
     <%= partial "partials/form", locals: { name: "contact",
                                            fields: ["name", "email", "message"],
