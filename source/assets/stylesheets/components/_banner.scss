@@ -20,6 +20,16 @@ header.banner {
     }
   }
 
+  .banner-image {
+    max-height: 80%;
+    max-width: 80%;
+
+    @include grid-media($for-desktop-up) {
+      max-height: 353px;
+      max-width: 385px;
+    }
+  }
+
   .grid-row {
     position: relative;
     z-index: 1;

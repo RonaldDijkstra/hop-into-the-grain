@@ -2,6 +2,7 @@
   background: $bordeaux;
   height: 60px;
   line-height: 60px;
+  padding-top: 60px;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -75,7 +76,7 @@
     }
 
     .navigation-bar {
-      max-height: 34em;
+      max-height: 40em;
     }
   }
 
