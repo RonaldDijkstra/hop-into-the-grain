@@ -10,8 +10,13 @@
       name: "Je naam"
       submit: "Verstuur"
     navigation:
+      about: "Over ons"
+      bands: "Bands"
+      breweries: "Brouwerijen"
       contact: "Contact"
       index: "Home"
+      info: "Info"
+      tickets: "Tickets"
     # Pages
     pages:
       x404:

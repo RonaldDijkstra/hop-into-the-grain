@@ -9,10 +9,25 @@
   <div class="navigation-bar">
     <ul class="menu">
       <li>
-        <%= current_link_to t("navigation.index"), "#home", class: "root-link", data: "data-scroll-to" %>
+        <%= current_link_to t("navigation.index"), "#home", class: "root-link", data: "scroll-to" %>
       </li>
       <li>
-        <%= current_link_to t("navigation.contact"), "#contact", class: "root-link", data: "data-scroll-to"  %>
+        <%= current_link_to t("navigation.about"), "#about", class: "root-link", data: "scroll-to"  %>
+      </li>
+      <li>
+        <%= current_link_to t("navigation.bands"), "#bands", class: "root-link", data: "scroll-to"  %>
+      </li>
+      <li>
+        <%= current_link_to t("navigation.breweries"), "#breweries", class: "root-link", data: "scroll-to"  %>
+      </li>
+      <li>
+        <%= current_link_to t("navigation.tickets"), "#tickets", class: "root-link", data: "scroll-to"  %>
+      </li>
+      <li>
+        <%= current_link_to t("navigation.info"), "#info", class: "root-link", data: "scroll-to"  %>
+      </li>
+      <li>
+        <%= current_link_to t("navigation.contact"), "#contact", class: "root-link", data: "scroll-to"  %>
       </li>
       <li>
         <% if lang == :nl %>

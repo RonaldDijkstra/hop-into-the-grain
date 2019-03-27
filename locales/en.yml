@@ -14,9 +14,13 @@
       name: "Your Name"
       submit: "Submit"
     navigation:
+      about: "About us"
+      bands: "Bands"
+      breweries: "Breweries"
       contact: "Contact"
-      events: "Events"
       index: "Home"
+      info: "Info"
+      tickets: "Tickets"
     # Pages
     pages:
       x404:
