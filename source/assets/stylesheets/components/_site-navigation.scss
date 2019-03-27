@@ -1,5 +1,4 @@
 .site-navigation {
-  background: $bordeaux;
   height: 60px;
   line-height: 60px;
   padding-top: 60px;
@@ -8,16 +7,39 @@
   z-index: 2;
 
   @include grid-media($for-desktop-up) {
+    background: transparent;
     padding-top: 0;
+    transition: background 0.5s ease,
+                box-shadow 0.5s ease;
   }
 
   a {
-    color: $dark-gray;
+    background: $bordeaux;
+    color: $white;
+    display: block;
+    font-family: $heading-font-family;
+    font-size: $base-font-size;
+    font-weight: $font-weight-small;
+    padding: 0 $base-spacing * 2;
     text-decoration: none;
+    text-transform: uppercase;
+
+    @include grid-media($for-desktop-up) {
+      background: transparent;
+      padding: 0 $base-spacing * 0.5;
+    }
+
+    &:hover {
+      color: $lighter-gray;
+    }
+
+    &.active {
+      color: $lighter-gray;
+    }
   }
 
   .mobile-toggle {
-    background: $dark-gray;
+    background: transparent;
     cursor: pointer;
     display: block;
     font-size: 20px;
@@ -66,6 +88,12 @@
   }
 
   &.navigation-open {
+    background: $bordeaux;
+
+    @include grid-media($for-desktop-up) {
+      background: transparent;
+    }
+
     .mobile-toggle span {
       background-color: transparent;
 
@@ -80,6 +108,10 @@
 
     .navigation-bar {
       max-height: 40em;
+
+      @include grid-media($for-desktop-up) {
+        max-height: 60px;
+      }
     }
   }
 
@@ -87,7 +119,7 @@
     float: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s;
+    transition: height 0.4s;
     width: 100%;
 
     @include grid-media($for-desktop-up) {
@@ -108,33 +140,14 @@
           display: inline-block;
         }
       }
+    }
+  }
 
-      a {
-        background: $bordeaux;
-        border-bottom: $base-border;
-        color: $white;
-        display: block;
-        font-family: $heading-font-family;
-        font-size: $base-font-size * 1.2;
-        font-weight: $font-weight-small;
-        padding: 0 $base-spacing * 0.7;
-        text-transform: uppercase;
+  &.header-fixed {
+    box-shadow: 0 4px 2px -2px rgba($black, 0.1);
 
-        @include grid-media($for-desktop-up) {
-          border-bottom: 0;
-        }
-
-        &:last-child {
-          border-bottom: 0;
-        }
-
-        &[aria-current]:not([aria-current="false"]) {
-          background-color: $white;
-          background-position: 0 bottom;
-          color: $slightly-desaturated-orange;
-          font-weight: $font-weight-semibold;
-        }
-      }
+    @include grid-media($for-desktop-up) {
+      background: $bordeaux;
     }
   }
 }

@@ -1,24 +1,9 @@
 header.banner {
-  background: $slightly-desaturated-orange no-repeat center center fixed;
+  background: $bordeaux no-repeat center center fixed;
   background-size: cover;
   color: $white;
   padding: 60px $base-spacing 0;
   position: relative;
-
-  &.primary-overlay {
-    &::before {
-      background-color: rgba($black, 0.5);
-      content: "";
-      display: flex;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: background 0.15s ease-in-out;
-      width: 100%;
-      z-index: 0;
-    }
-  }
 
   .banner-image {
     max-height: 80%;

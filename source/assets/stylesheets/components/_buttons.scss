@@ -51,10 +51,6 @@
     font-size: $base-font-size * 1.2;
   }
 
-  &.brown {
-    @include button($slightly-desaturated-orange);
-  }
-
   &.orange {
     @include button($orange);
   }

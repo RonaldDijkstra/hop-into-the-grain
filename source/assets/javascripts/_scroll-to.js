@@ -10,6 +10,11 @@ $(function () {
 
     $('.site-navigation').toggleClass('navigation-open');
 
+    $('a').each(function () {
+      $(this).removeClass('active');
+    }),
+
+    $(this).toggleClass('active');
     return false;
   });
 
