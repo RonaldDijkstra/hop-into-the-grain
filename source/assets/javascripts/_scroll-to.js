@@ -1,7 +1,7 @@
 $(function () {
   "use strict";
 
-  var offsetTop = -$(".site-navigation").height() * 1.5;
+  var offsetTop = -60;
 
   $("a[data='scroll-to']").on("click", function () {
     $.scrollTo(this.hash, 400, {
