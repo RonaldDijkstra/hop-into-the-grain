@@ -20,21 +20,19 @@
     font-family: $heading-font-family;
     font-size: $base-font-size;
     font-weight: $font-weight-small;
-    padding: 0 $base-spacing * 2;
+    padding: 0 $base-spacing * 3;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background 0.5s ease;
 
     @include grid-media($for-desktop-up) {
       background: transparent;
-      padding: 0 $base-spacing * 0.5;
+      padding: 0 $base-spacing * 1;
     }
 
+    &.active,
     &:hover {
-      color: $lighter-gray;
-    }
-
-    &.active {
-      color: $lighter-gray;
+      color: darken($white, 15%);
     }
   }
 
@@ -151,6 +149,14 @@
     @include grid-media($for-desktop-up) {
       background: $bordeaux;
       box-shadow: 0 4px 2px -2px rgba($black, 0.1);
+    }
+
+    .root-link {
+      &.active,
+      &:hover {
+        background-color: darken($bordeaux, 5%);
+        color: $white;
+      }
     }
   }
 }

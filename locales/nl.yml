@@ -33,6 +33,8 @@
         title: "Bands"
       breweries:
         title: "Brouwerijen"
+      contact:
+        title: "Contact"
       extra-info:
         title: "Extra info"
       tickets:

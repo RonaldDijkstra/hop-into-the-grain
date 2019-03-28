@@ -31,3 +31,14 @@
           location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
       thanks:
         title: "Thanks!"
+    sections:
+      bands:
+        title: "Bands"
+      breweries:
+        title: "Breweries"
+      contact:
+        title: "Contact"
+      extra-info:
+        title: "Extra info"
+      tickets:
+        title: "Tickets"

@@ -48,10 +48,11 @@ blog: menu
 
 <section class="form" id="contact">
   <div class="grid-row form-grid-row">
+    <h2><%= t("sections.contact.title") %></h2>
     <%= partial "partials/form", locals: { name: "contact",
                                            fields: ["name", "email", "message"],
                                            button_text: t("form.submit"),
-                                           button_variant: "orange"} %>
+                                           button_variant: "bordeaux"} %>
   </div>
 </section>
 

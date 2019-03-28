@@ -51,8 +51,8 @@
     font-size: $base-font-size * 1.2;
   }
 
-  &.orange {
-    @include button($orange);
+  &.bordeaux {
+    @include button($bordeaux);
   }
 
   &.white {
