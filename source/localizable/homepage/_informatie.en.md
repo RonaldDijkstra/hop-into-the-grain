@@ -1,4 +1,4 @@
-The nicest and most surprising Craft Beer & Music Festival of the North!
+## The most surprising Craft Beer & Music Festival of the North!
 
 It is a nice combination, hop and grain; two unmissable ingredients in the delicious beer. The amount of different beers you can create with it is endless.
 

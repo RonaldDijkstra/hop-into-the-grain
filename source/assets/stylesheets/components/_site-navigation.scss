@@ -13,7 +13,7 @@
                 box-shadow 0.5s ease;
   }
 
-  a {
+  a.root-link {
     background: $bordeaux;
     color: $white;
     display: block;
@@ -39,7 +39,7 @@
   }
 
   .mobile-toggle {
-    background: transparent;
+    background: $dark-gray;
     cursor: pointer;
     display: block;
     font-size: 20px;
@@ -94,15 +94,19 @@
       background: transparent;
     }
 
-    .mobile-toggle span {
-      background-color: transparent;
+    .mobile-toggle {
+      background-color: $bordeaux;
 
-      &::before {
-        transform: rotate(45deg);
-      }
+      span {
+        background-color: transparent;
 
-      &::after {
-        transform: rotate(-45deg);
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
       }
     }
 
