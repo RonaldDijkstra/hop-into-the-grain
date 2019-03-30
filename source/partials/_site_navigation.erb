@@ -1,4 +1,4 @@
-<nav class="site-navigation" role="navigation" data-header="fixed">
+<nav class="site-navigation" id="navigation" role="navigation" data-header="fixed">
 
   <a id="mobile-toggle" class="mobile-toggle">
     <span></span>
@@ -9,7 +9,7 @@
   <div class="navigation-bar">
     <ul class="menu">
       <li>
-        <%= current_link_to t("navigation.index"), "#home", class: "root-link active", data: "scroll-to" %></li><li>
+        <%= current_link_to t("navigation.index"), "#home", class: "root-link", data: "scroll-to" %></li><li>
         <%= current_link_to t("navigation.about"), "#about", class: "root-link", data: "scroll-to"  %></li><li>
         <%= current_link_to t("navigation.bands"), "#bands", class: "root-link", data: "scroll-to"  %></li><li>
         <%= current_link_to t("navigation.breweries"), "#breweries", class: "root-link", data: "scroll-to"  %></li><li>
