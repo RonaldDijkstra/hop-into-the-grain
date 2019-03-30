@@ -18,6 +18,25 @@ body.index {
     &.bands {
       background-color: $lightest-gray;
     }
+
+    &.tickets {
+      $banner-image: "../images/banner-tickets.jpg";
+      background: url($banner-image) no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+
+      .buy-now {
+        padding: 2em 0;
+      }
+    }
+
+    &.extra-info {
+      text-align: center;
+    }
+
+    &.social {
+      background: $lightest-gray;
+    }
   }
 
   article {

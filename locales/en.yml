@@ -54,5 +54,13 @@
         title: "Contact"
       extra-info:
         title: "Extra info"
+        line-1: "Tokens €2,50 each for 20 cl."
+        line-2: "FREE glass"
+        line-3: "First beer FREE"
+      social:
+        title: "Follow us:"
       tickets:
         title: "Tickets"
+        text: "Buy your 'Early Beer' ticket now and earn your first beer back"
+        service: "service fee"
+        door-price: "Door price"

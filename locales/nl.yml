@@ -51,5 +51,14 @@
         title: "Contact"
       extra-info:
         title: "Extra info"
+        line-1: "Munten €2,50 per stuk voor 20 cl."
+        line-2: "GRATIS bierglas"
+        line-3: "GRATIS eerste biertje"
+      social:
+        title: "Volg ons:"
       tickets:
+        buy-now: "Koop nu tickets"
         title: "Tickets"
+        text: "Koop nu je 'Early Beer' ticket en verdien je eerste biertje alweer terug!"
+        service: "servicekosten"
+        door-price: "Aan de deur"
