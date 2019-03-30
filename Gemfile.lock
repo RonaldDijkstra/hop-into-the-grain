@@ -120,8 +120,6 @@ GEM
     public_suffix (3.0.3)
     rack (2.0.6)
     rails-assets-jquery (3.3.1)
-    rails-assets-jquery.scrollTo (2.1.2)
-      rails-assets-jquery (>= 1.8)
     rails-assets-what-input (5.2.0)
     rainbow (3.0.0)
     rake (12.3.2)
@@ -180,7 +178,6 @@ DEPENDENCIES
   middleman-sprockets
   neat
   rails-assets-jquery!
-  rails-assets-jquery.scrollTo!
   rails-assets-what-input!
   rake
   redcarpet
