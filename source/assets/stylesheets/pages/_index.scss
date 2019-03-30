@@ -1,0 +1,45 @@
+body.index {
+  header.banner {
+    $banner-image: "../images/banner-homepage.png";
+    background-image: url($banner-image);
+  }
+
+  section {
+    .grid-row {
+      padding: 4em 1em;
+    }
+
+    h2 {
+      font-size: $base-font-size * 1.6;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    &.bands {
+      background-color: $lightest-gray;
+    }
+
+    &.tickets {
+      $banner-image: "../images/banner-tickets.jpg";
+      background: url($banner-image) no-repeat center center fixed;
+      background-size: cover;
+      text-align: center;
+
+      .buy-now {
+        padding: 2em 0;
+      }
+    }
+
+    &.extra-info {
+      text-align: center;
+    }
+
+    &.social {
+      background: $lightest-gray;
+    }
+  }
+
+  article {
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,39 @@
+.flex-wrapper {
+  text-align: center;
+
+  @include grid-media($for-desktop-up) {
+    text-align: left;
+  }
+
+  .more {
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  .flex-item {
+    @include grid-media($for-desktop-up) {
+      display: flex;
+      padding: 2em 1em;
+    }
+  }
+
+  .item-image {
+    border: 2px solid $white;
+    border-radius: 50%;
+    height: 280px;
+    margin: 0 auto 1em;
+    overflow: hidden;
+    width: 280px;
+
+    @include grid-media($for-desktop-up) {
+      flex: 0 0 120px;
+      height: 120px;
+      margin-right: 1em;
+      width: 120px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

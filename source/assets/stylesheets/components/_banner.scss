@@ -1,0 +1,55 @@
+header.banner {
+  background: $bordeaux no-repeat center center fixed;
+  background-size: cover;
+  color: $white;
+  padding: 60px $base-spacing 0;
+  position: relative;
+
+  .banner-image {
+    margin-bottom: 2em;
+    max-height: 80%;
+    max-width: 80%;
+
+    @include grid-media($for-desktop-up) {
+      max-height: 583px;
+      max-width: 600px;
+    }
+  }
+
+  .grid-row {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.variant-big {
+    text-align: center;
+
+    .grid-row {
+      padding: 6em 0;
+    }
+
+    p {
+      font-size: $base-font-size * 1.2;
+
+      @include grid-media($for-desktop-up) {
+        font-size: $base-font-size * 1.4;
+      }
+    }
+  }
+
+  &.variant-normal {
+    text-align: center;
+
+    .grid-row {
+      padding: 3em 0;
+    }
+
+    h1 {
+      font-size: $base-font-size * 2;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}

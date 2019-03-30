@@ -1,0 +1,162 @@
+---
+description:
+  nl: "Dé speciaalbierwinkel van Groningen met het grootste en beste assortiment. Wij zijn geopend van dinsdag t/m zondag."
+  en: "The craft beer store in Groningen with the largest and best collection of beer. We are open from Tuesday to Sunday."
+sitemap_priority: 1
+blog: menu
+---
+
+<%= partial "partials/banner", locals: { id: "home",
+                                         variant: "variant-big",
+                                         background_image: "banner-homepage.png",
+                                         png_image: "logo-hop-into-the-grain-festival.png",
+                                         title: t("pages.index.banner.title"),
+                                         location: t("pages.index.banner.location"),
+                                         date: t("pages.index.banner.date")} %>
+
+<section class="introduction single-column" id="about">
+  <div class="grid-row">
+    <%= partial "homepage/informatie" %>
+  </div>
+</section>
+
+<section class="bands" id="bands">
+  <div class="grid-row">
+    <h2><%= t("sections.bands.title") %></h2>
+
+    <div class="flex-wrapper">
+
+      <div class="flex-item">
+        <div class="item-image">
+          <%= image_tag "assets/images/bands/electric-hollers.jpg", alt: "Electric Hollers" %>
+        </div>
+        <div class="item-text">
+          <h3>
+            Electric Hollers
+          </h3>
+          <p>
+            <%= t("sections.bands.electric-hollers.text") %>
+          </p>
+        </div>
+      </div>
+
+      <p class="more">
+        <em><%= t("sections.bands.more") %></em>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section class="breweries" id="breweries">
+  <div class="grid-row">
+    <h2><%= t("sections.breweries.title") %></h2>
+
+    <div class="flex-wrapper">
+
+      <div class="flex-item">
+        <div class="item-image">
+          <%= image_tag "assets/images/breweries/stanislaus-brewskovitch.svg", alt: "Stanislaus Brewskovitch" %>
+        </div>
+        <div class="item-text">
+          <h3>
+            Stanislaus Brewskovitch
+          </h3>
+          <p>
+            <%= t("sections.breweries.stanislaus.text") %>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <div class="item-image">
+          <%= image_tag "assets/images/breweries/berging-brouwerij.png", alt: "Berging Brouwerij" %>
+        </div>
+        <div class="item-text">
+          <h3>
+            Berging Brouwerij
+          </h3>
+          <p>
+            <%= t("sections.breweries.berging.text") %>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <div class="item-image">
+          <%= image_tag "assets/images/breweries/brouwerij-klein-duimpje.png", alt: "Brouwerij Klein Duimpje" %>
+        </div>
+        <div class="item-text">
+          <h3>
+            Brouwerij Klein Duimpje
+          </h3>
+          <p>
+            <%= t("sections.breweries.klein-duimpje.text") %>
+          </p>
+        </div>
+      </div>
+
+      <p class="more">
+        <em><%= t("sections.breweries.more") %></em>
+      </p>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="tickets" id="tickets">
+  <div class="grid-row">
+
+    <h2><%= t("sections.tickets.title") %></h2>
+
+    <p><%= t("sections.tickets.text") %></p>
+
+    <h3>Online</h3>
+    <p>Early Beer €10,00 (+ €0,99 <%= t("sections.tickets.service") %>)</p>
+    <p>Normaal €12,50 (+ €0,99 <%= t("sections.tickets.service") %>)</p>
+
+    <div class="buy-now">
+      <a href="https://www.yourticketprovider.nl/events/28950-hop-into-the-grain/" class="button big orange">
+        <%= t("sections.tickets.buy-now") %>
+      </a>
+    </div>
+
+    <h3>Offline</h3>
+    <p>Hard Copy ticket @ Just in Beer €12,50</p>
+    <p><%= t("sections.tickets.door-price") %> €14,00</p>
+
+  </div>
+</section>
+
+<section class="extra-info" id="info">
+  <div class="grid-row">
+    <h2><%= t("sections.extra-info.title") %></h2>
+
+    <p>
+      => <%= t("sections.extra-info.line-1") %><br>
+      => <%= t("sections.extra-info.line-2") %><br>
+      => <%= t("sections.extra-info.line-3") %>
+    </p>
+
+  </div>
+</section>
+
+<section class="social" id="social">
+  <div class="grid-row">
+    <h2><%= t("sections.social.title") %></h2>
+    <%= partial "partials/social-links" %>
+  </div>
+</section>
+
+<section class="form" id="contact">
+  <div class="grid-row form-grid-row">
+    <h2><%= t("sections.contact.title") %></h2>
+    <%= partial "partials/form", locals: { name: "contact",
+                                           fields: ["name", "email", "message"],
+                                           button_text: t("form.submit"),
+                                           button_variant: "bordeaux"} %>
+  </div>
+</section>
+
+<%= partial "partials/maps" %>

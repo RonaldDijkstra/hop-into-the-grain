@@ -1,0 +1,64 @@
+---
+  nl:
+    CNAME: www.hopintothegrainfestival.nl
+
+    site:
+      description: "In een ongedwongen sfeer lekker van de diverse biertjes en fijne muziek genieten. "
+    form:
+      email: "Je e-mailadres"
+      message: "Bericht"
+      name: "Je naam"
+      submit: "Verstuur"
+    navigation:
+      about: "Over ons"
+      bands: "Bands"
+      breweries: "Brouwerijen"
+      contact: "Contact"
+      index: "Home"
+      info: "Info"
+      tickets: "Tickets"
+    # Pages
+    pages:
+      x404:
+        title: "404 - pagina niet gevonden"
+      index:
+        banner:
+          title: "HOP! Into the Grain 2019"
+          date: "25 mei 2019, 15.00-23.00"
+          location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
+      thanks:
+        title: "Bedankt!"
+    sections:
+      bands:
+        title: "Bands"
+        more: "Meer bands to be announced!"
+        electric-hollers:
+          text: |
+            Electric Hollers staat voor een nieuwe generatie blues en rock artiesten uit Noord-Nederland. Maak je klaar om weggeblazen te worden door een muur van vintage sound en energie! Zware bastonen, donderende drums en gitaarsolo’s die je meeslepen naar vervlogen tijden. De band laat zich inspireren door bands als Led Zeppelin, Santana & Ten Years After en bracht in 2018 hun eerste plaat ‘Rise’ uit.
+      breweries:
+        title: "Brouwerijen"
+        more: "Meer brouwerijen to be announced!"
+        stanislaus:
+          text: |
+             'Because nothing epic happens drinking water'. Deze bier-evangelisten uit Enschede zijn op een missie om goed craft bier te verspreiden.
+        berging:
+          text: |
+            Ongecompliceerd en toch bijzonder. Berging zet in op traditionele smaken opnieuw uitvinden en duurzame recepten ontwikkelen.
+        klein-duimpje:
+          text: |
+            Meer dan 20 jaar brouw ervaring en meer dan 20 biertje op hun naam is ‘klein duimpje’ zeker geen kleine in het craft-beer-land.
+      contact:
+        title: "Contact"
+      extra-info:
+        title: "Extra info"
+        line-1: "Munten €2,50 per stuk voor 20 cl."
+        line-2: "GRATIS bierglas"
+        line-3: "GRATIS eerste biertje"
+      social:
+        title: "Volg ons:"
+      tickets:
+        buy-now: "Koop nu tickets"
+        title: "Tickets"
+        text: "Koop nu je 'Early Beer' ticket en verdien je eerste biertje alweer terug!"
+        service: "servicekosten"
+        door-price: "Aan de deur"

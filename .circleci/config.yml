@@ -1,0 +1,36 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.3-jessie-node
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: middleman-project-{{ arch }}-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+
+      - run:
+          name: Install Ruby dependencies
+          command: bundle install --path vendor/bundle
+
+      - save_cache:
+          key: middleman-project-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - run:
+          name: Setup the environment
+          command: cp .env.sample .env
+
+      - run:
+          name: Build & Proof Middleman site
+          command: rake proof
