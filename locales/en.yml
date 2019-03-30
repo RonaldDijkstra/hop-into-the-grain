@@ -34,8 +34,22 @@
     sections:
       bands:
         title: "Bands"
+        more: "More bands to be announced!"
+        electric-hollers:
+          text: |
+            Electric Hollers stands for a new generation of blues and rock artists from northern Netherlands. Get ready to be blown away by a wall of vintage sound and energy! Heavy bass tones, thundering drums and guitar solos that drag you through past times. The band is inspired by Led Zeppelin, Santana & Ten Years After and released their first album "Rise" in 2018.
       breweries:
         title: "Breweries"
+        more: "More breweries to be announced!"
+        stanislaus:
+          text: |
+            'Because nothing epic happens drinking water'. These beer-evangelists from Enschede are on a mission to spread the word of good-craft-beer.
+        berging:
+          text: |
+            Uncomplicated and yet special. Berging focuses on reinventing traditional flavors and developing sustainable recipes.
+        klein-duimpje:
+          text: |
+            More than 20 years of brewing experience and more than 20 beers to their name, Klein Duimpje is certainly not a small one in craft beer.
       contact:
         title: "Contact"
       extra-info:
