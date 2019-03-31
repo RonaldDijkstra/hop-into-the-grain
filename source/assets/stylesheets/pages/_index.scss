@@ -25,6 +25,14 @@ body.index {
       background-size: cover;
       text-align: center;
 
+      h2 {
+        margin: 0;
+      }
+
+      .headline {
+        padding-bottom: 2em;
+      }
+
       .buy-now {
         padding: 2em 0;
       }
