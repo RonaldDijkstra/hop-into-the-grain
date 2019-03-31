@@ -60,6 +60,7 @@
       social:
         title: "Follow us:"
       tickets:
+        buy-now: "Buy tickets now"
         title: "Tickets"
         text: "Buy your 'Early Beer' ticket now and earn your first beer back"
         service: "service fee"
