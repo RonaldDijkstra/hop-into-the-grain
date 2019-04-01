@@ -11,9 +11,9 @@
     <%= partial "partials/meta_favicons" %>
     <%= partial "partials/meta_open_graph" %>
   </head>
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %> <%= current_page.data.custom_class -%>">
     <main class="main" role="main">
-      <%= partial "partials/site_navigation" %>
+      <%= partial "partials/site_navigation" if proxied_to.to_s == "index.html"  %>
       <%= yield %>
     </main>
     <%= partial "partials/site_footer" %>

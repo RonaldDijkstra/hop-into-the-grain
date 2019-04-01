@@ -11,6 +11,10 @@
         <%= content_tag title_tag ||= :h1, class: "title" do title end %>
       <% end %>
 
+      <% if locals[:link] && locals[:link_text] %>
+        <%= link_to link_text, link %>
+      <% end %>
+
       <% if locals[:text] %>
         <p class="text">
           <%= text %>

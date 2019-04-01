@@ -4,8 +4,13 @@ title:
   en: 404 - Page not found
 robots: noindex,nofollow
 directory_index: false
+link:
+  nl: "/"
+  en: "/en/"
+custom_class: "subpage"
 ---
 
-<%= partial "partials/banner", locals: { variant: "variant-normal",
-                                         variant_overlay: "primary-overlay",
-                                         title: t("pages.x404.title")} %>
+<%= partial "partials/banner", locals: { variant: "variant-full-height",
+                                         title: t("pages.x404.title"),
+                                         link: local_link,
+                                         link_text: t("pages.x404.home")} %>
