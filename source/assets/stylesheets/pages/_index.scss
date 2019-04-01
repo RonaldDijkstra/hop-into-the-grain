@@ -21,7 +21,7 @@ body.index {
 
     &.tickets {
       $banner-image: "../images/banner-tickets.jpg";
-      background: url($banner-image) no-repeat center center fixed;
+      background: url($banner-image) no-repeat center center;
       background-size: cover;
       text-align: center;
 
