@@ -35,6 +35,18 @@ module ApplicationHelpers
     end
   end
 
+  def frontmatter_link
+    current_page.data.link
+  end
+
+  def local_link
+    if frontmatter_link.is_a?(Hash) && frontmatter_link[I18n.locale]
+      frontmatter_link.send(I18n.locale)
+    elsif frontmatter_link
+      frontmatter_link
+    end
+  end
+
   # Page title is localized or title
   def page_title
     local_title || website_name
@@ -177,7 +189,7 @@ module ApplicationHelpers
 
   # Root url?
   def root_url?(page = current_page)
-    page.url == "/"
+    page.url == "/" || "/en/"
   end
 
   # Blog?

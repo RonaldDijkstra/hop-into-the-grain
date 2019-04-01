@@ -4,6 +4,7 @@ header.banner {
   color: $white;
   padding: 60px $base-spacing 0;
   position: relative;
+  text-align: center;
 
   .banner-image {
     margin-bottom: 2em;
@@ -22,8 +23,6 @@ header.banner {
   }
 
   &.variant-big {
-    text-align: center;
-
     .grid-row {
       padding: 6em 0;
     }
@@ -38,8 +37,6 @@ header.banner {
   }
 
   &.variant-normal {
-    text-align: center;
-
     .grid-row {
       padding: 3em 0;
     }
@@ -51,5 +48,12 @@ header.banner {
         display: block;
       }
     }
+  }
+
+  &.variant-full-height {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
   }
 }

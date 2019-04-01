@@ -3,7 +3,7 @@
     CNAME: www.hopintothegrainfestival.nl
 
     site:
-      description: "In een ongedwongen sfeer lekker van de diverse biertjes en fijne muziek genieten. "
+      description: "In een ongedwongen sfeer lekker van de diverse biertjes en fijne muziek genieten."
     form:
       email: "Je e-mailadres"
       message: "Bericht"
@@ -21,13 +21,15 @@
     pages:
       x404:
         title: "404 - pagina niet gevonden"
+        home: "Naar homepage"
       index:
         banner:
           title: "HOP! Into the Grain 2019"
           date: "25 mei 2019, 15.00-23.00"
           location: "EM2, Suikerlaan 6, 7943 DA, Groningen"
       thanks:
-        title: "Bedankt!"
+        title: "Bedankt voor je bericht!"
+        home: "Terug naar homepage"
     sections:
       bands:
         title: "Bands"
