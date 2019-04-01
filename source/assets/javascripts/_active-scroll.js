@@ -30,9 +30,8 @@ function onScroll(event){
   $('#navigation a.root-link').not('#navigation a.language-link').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr('href'));
-    console.log(refElement);
 
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+    if (refElement.position().top <= scrollPos + 60 && refElement.position().top + refElement.height() > scrollPos) {
       $('#navigation ul li a').removeClass('active');
       currLink.addClass('active');
     } else {

@@ -16,7 +16,7 @@
       <%= partial "partials/site_navigation" if proxied_to.to_s == "index.html"  %>
       <%= yield %>
     </main>
-    <%= partial "partials/site_footer" %>
+    <%= partial "partials/site_footer" if proxied_to.to_s == "index.html" %>
     <%= javascript_include_tag "main" %>
     <%= partial "partials/analytics" %>
     <%= partial "partials/schema" if proxied_to.to_s == "index.html" %>
