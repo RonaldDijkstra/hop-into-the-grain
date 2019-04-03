@@ -56,9 +56,9 @@
         title: "Contact"
       extra-info:
         title: "Extra info"
-        line-1: "Tokens €2,50 each for 20 cl."
-        line-2: "FREE glass"
-        line-3: "First beer FREE"
+        line-1: "Tokens €2,50 each for 15 cl."
+        line-2: "You get a tasting glass at the entrance. Do you want to take it home? = 1 token"
+        line-3: "FREE first beer"
       social:
         title: "Follow us:"
       tickets:
