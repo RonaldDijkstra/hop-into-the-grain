@@ -37,6 +37,9 @@
         electric-hollers:
           text: |
             Electric Hollers staat voor een nieuwe generatie blues en rock artiesten uit Noord-Nederland. Maak je klaar om weggeblazen te worden door een muur van vintage sound en energie! Zware bastonen, donderende drums en gitaarsolo’s die je meeslepen naar vervlogen tijden. De band laat zich inspireren door bands als Led Zeppelin, Santana & Ten Years After en bracht in 2018 hun eerste plaat ‘Rise’ uit.
+        volt:
+          text: |
+            Blues and Beer, a poor man’s remedy. Begrijp ons niet verkeerd, dit moet vooral een vrolijke dag en avond worden, maar een beetje blues is nooit ver weg met een goeie pint in de hand. Het leven is immers een lach en een traan. En luistert er iets beters weg dan een fijne Chicago Blues band? Klassiekers en eigen werk passeren de revu.
       breweries:
         title: "Brouwerijen"
         more: "Meer brouwerijen to be announced!"
@@ -49,6 +52,15 @@
         klein-duimpje:
           text: |
             Meer dan 20 jaar brouw ervaring en meer dan 20 biertje op hun naam is ‘klein duimpje’ zeker geen kleine in het craft-beer-land.
+        nevel:
+          text: |
+            Als enige brouwerij in Nederland legt Nevel zich volledig toe op bieren met gemengde en wilde gisten. De wilde gisten zorgen ervoor dat het bier verfrissend, droog en complex wordt. Ze brouwen zoveel mogelijk met biologische en onbewerkte ingrediënten uit de omgeving van hun home-town Nijmegen.
+        doggerland:
+          text: |
+            Doggerland Craft Cider wil een brug slaan tussen de Engelse cidercultuur en het overschot van de appeloogst in en rondom Groningen.  Ze hebben inmiddels 4  ciders in productie, elk met een pure en eigenzinnige smaak.
+        vandestreek:
+          text: |
+            De brouwende broers van VandeStreek schuwen nieuwe smaken en technieken niet. Inmiddels hebben ze 7 vaste bieren, aangevuld met elke maand een speciaal-speciaalbiertje, collaborations met andere hop-fanatici en barrel bged bieren uit hun snel groeiende barrel room.
       contact:
         title: "Contact"
       extra-info:

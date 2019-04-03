@@ -40,6 +40,9 @@
         electric-hollers:
           text: |
             Electric Hollers stands for a new generation of blues and rock artists from northern Netherlands. Get ready to be blown away by a wall of vintage sound and energy! Heavy bass tones, thundering drums and guitar solos that drag you through past times. The band is inspired by Led Zeppelin, Santana & Ten Years After and released their first album "Rise" in 2018.
+        volt:
+          text: |
+            Blues and Beer, a poor man's remedy. Don't get us wrong, this should be a happy day and evening, but a bit of blues is never far away with a good pint in hand. After all, life is a smile and a tear. And is there anything better than a great Chicago Blues band? 10.000 Volt will play classics and own work.
       breweries:
         title: "Breweries"
         more: "More breweries to be announced!"
@@ -52,6 +55,15 @@
         klein-duimpje:
           text: |
             More than 20 years of brewing experience and more than 20 beers to their name, Klein Duimpje is certainly not a small one in craft beer.
+        nevel:
+          text: |
+            Nevel focuses entirely on beers with mixed and wild yeasts. The wild yeasts ensure that the beer becomes refreshing, dry and complex. Nevel brews as much as possible with organic and unprocessed ingredients from their home-town Nijmegen.
+        doggerland:
+          text: |
+            Doggerland Craft Cider wants to bridge the gap between English cider culture and the surplus of the apple harvest in and around Groningen. They now have 4 ciders in production, each with a pure and quirky taste.
+        vandestreek:
+          text: |
+            The brewing brothers of VandeStreek do not shy away from new tastes and techniques. They now have a core range of 7 beers, supplemented with a special release each month, collaborations with other hop fanatics and barrel bged beers from their fast-growing barrel room.
       contact:
         title: "Contact"
       extra-info:
