@@ -55,6 +55,9 @@
         klein-duimpje:
           text: |
             More than 20 years of brewing experience and more than 20 beers to their name, Klein Duimpje is certainly not a small one in craft beer.
+        nevel:
+          text: |
+            Nevel focuses entirely on beers with mixed and wild yeasts. The wild yeasts ensure that the beer becomes refreshing, dry and complex. Nevel brews as much as possible with organic and unprocessed ingredients from their home-town Nijmegen.
       contact:
         title: "Contact"
       extra-info:
