@@ -7,14 +7,6 @@ def project_name
   "HOP! into the Grain 2019 🍺"
 end
 
-## Get new data
-task :data do
-  puts "== Retrieving external data..."
-  system "ruby lib/untappd_menu.rb" || exit(1)
-  puts "== Retrieved external data".green
-  exit
-end
-
 ## Serve
 task :serve do
   puts "== Project: " + project_name.green
