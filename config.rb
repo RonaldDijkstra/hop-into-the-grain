@@ -41,7 +41,7 @@ page "/menu/en/*", layout: false
 
 # Settings for production
 configure :production do
-  activate :asset_hash, ignore: ["assets/images/maps-marker.png"]
+  activate :asset_hash, ignore: ["assets/images/maps-marker.svg"]
   # activate :gzip
   activate :minify_css
   activate :minify_html
