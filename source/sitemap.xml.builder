@@ -6,8 +6,7 @@ xml.instruct!
 xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   sitemap.resources.select { |page|
     page.destination_path =~ /\.html/ &&
-    !(page.data.robots && page.data.robots.include?("noindex")) &&
-    !(page.path =~ /CNAME.html/)
+    !(page.data.robots && page.data.robots.include?("noindex"))
     }.each do |page|
       xml.url do
         xml.loc full_url(page.url)
