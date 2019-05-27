@@ -1,8 +1,6 @@
 [build]
   command = "rake build"
   publish = "build/"
-[template.environment]
-  SEGMENT_KEY = "QrNc9G7j8b5dBWynL9PN5CKribR9GmjX"
 
 [[redirects]]
   from = "/en/*"
