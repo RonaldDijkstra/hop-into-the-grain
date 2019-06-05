@@ -10,9 +10,9 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     ast (2.4.0)
-    autoprefixer-rails (9.5.0)
+    autoprefixer-rails (9.6.0)
       execjs
-    backports (3.14.0)
+    backports (3.15.0)
     bourbon (5.1.0)
       sass (~> 3.4)
       thor (~> 0.19)
@@ -31,8 +31,8 @@ GEM
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.5)
-    ffi (1.10.0)
-    haml (5.0.4)
+    ffi (1.11.1)
+    haml (5.1.1)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -116,7 +116,7 @@ GEM
     parallel (1.17.0)
     parser (2.6.3.0)
       ast (~> 2.4.0)
-    public_suffix (3.0.3)
+    public_suffix (3.1.0)
     rack (2.0.7)
     rails-assets-jquery (3.4.1)
     rails-assets-what-input (5.2.1)
@@ -160,7 +160,7 @@ GEM
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.6.0)
-    yell (2.1.0)
+    yell (2.2.0)
 
 PLATFORMS
   ruby
@@ -184,7 +184,7 @@ DEPENDENCIES
   scss_lint
 
 RUBY VERSION
-   ruby 2.4.3p205
+   ruby 2.6.0p0
 
 BUNDLED WITH
-   2.0.1
+   1.17.3
