@@ -184,7 +184,7 @@ DEPENDENCIES
   scss_lint
 
 RUBY VERSION
-   ruby 2.4.3p205
+   ruby 2.6.0p0
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
