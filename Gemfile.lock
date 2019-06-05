@@ -10,7 +10,7 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     ast (2.4.0)
-    autoprefixer-rails (9.5.1.1)
+    autoprefixer-rails (9.6.0)
       execjs
     backports (3.15.0)
     bourbon (5.1.0)
@@ -187,4 +187,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   1.17.3
+   2.0.1
