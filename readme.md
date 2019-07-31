@@ -1,10 +1,5 @@
 # HOP! Into the Grain Festival 2019
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/RonaldDijkstra/hop-into-the-grain/master.svg)](https://circleci.com/gh/RonaldDijkstra/hop-into-the-grain)
-
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/0a564ece-5dea-4338-b9b1-333824808bbb/deploy-status)](https://app.netlify.com/sites/wildfestivalgroningen/deploys)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=RonaldDijkstra/wildfestivalgroningen)](https://dependabot.com) -->
-
 A website for a Craft Beer & Music Festival in Groningen.
 
 Saturday the 25th of May 2019 @ EM2 Groningen, The Netherlands.

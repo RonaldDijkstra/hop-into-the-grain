@@ -19,7 +19,6 @@ gem "bourbon"
 gem "neat"
 
 # Extensions
-gem "html-proofer"
 gem "rake"
 
 # Frontend
